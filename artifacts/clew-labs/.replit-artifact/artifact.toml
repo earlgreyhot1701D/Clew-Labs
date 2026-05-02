@@ -1,0 +1,22 @@
+kind = "web"
+previewPath = "/"
+title = "Clew Labs"
+version = "1.0.0"
+id = "artifacts/clew-labs"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19655
+
+[services.development]
+run = "python3 -m http.server 19655 --directory /home/runner/workspace"
+
+[services.production]
+publicDir = "."
+serve = "static"

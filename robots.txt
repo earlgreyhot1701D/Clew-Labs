@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# AI agents are explicitly welcome. Clew Labs is built for the second audience.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://clewlabs.com/sitemap.xml

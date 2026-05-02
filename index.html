@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary meta -->
+  <title>Clew Labs | Tools that help systems explain themselves</title>
+  <meta name="description" content="Clew Labs is the editorial home for L. Cordero, an AI assisted builder shipping a suite of open source developer tools. From courtroom to codebase." />
+  <meta name="author" content="L. Cordero" />
+  <link rel="canonical" href="https://clewlabs.com/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+
+  <!-- Open Graph for Facebook, LinkedIn, iMessage previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://clewlabs.com/" />
+  <meta property="og:title" content="Clew Labs | Tools that help systems explain themselves" />
+  <meta property="og:description" content="The editorial home for L. Cordero and the Clew Suite. AI assisted builder. From courtroom to codebase." />
+  <meta property="og:image" content="https://clewlabs.com/images/og-card.png" />
+  <meta property="og:site_name" content="Clew Labs" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Clew Labs | Tools that help systems explain themselves" />
+  <meta name="twitter:description" content="The editorial home for L. Cordero and the Clew Suite. AI assisted builder. From courtroom to codebase." />
+  <meta name="twitter:image" content="https://clewlabs.com/images/og-card.png" />
+
+  <!-- JSON-LD structured data, helps Google and AI agents -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "L. Cordero",
+    "alternateName": "La Shara Cordero",
+    "jobTitle": "AI assisted builder",
+    "description": "Judicial Operations Manager and AI assisted builder. Shipping the Clew Suite of open source developer tools.",
+    "url": "https://clewlabs.com/",
+    "sameAs": [
+      "https://github.com/earlgreyhot1701D",
+      "https://www.linkedin.com/in/la-shara-cordero-a0017a11/",
+      "https://dev.to/earlgreyhot1701d",
+      "https://theforumfiles.substack.com"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santa Barbara",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Clew Labs",
+      "url": "https://clewlabs.com/"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --field: #0A1F2E;
+      --turquoise: #1FB5B7;
+      --sienna: #E85A1F;
+      --paper: #F1E8D2;
+      --paper-warm: #E8E0CC;
+      --charcoal: #1F1F1F;
+      --paper-edge: rgba(241, 232, 210, 0.15);
+      --circuit: rgba(31, 181, 183, 0.08);
+      --max: 1280px;
+      --body: 36rem;
+      --shadow: 0 2px 24px rgba(0, 0, 0, 0.3);
+      --nav-height: 64px;
+      --display: "Cinzel", Georgia, serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--nav-height) + 1rem);
+    }
+
+    body {
+      margin: 0;
+      color: var(--paper-warm);
+      background: var(--field);
+      font-family: "Source Serif Pro", Georgia, serif;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* Integrated circuit architecture: border rails and localized motifs */
+    .field-rails {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .field-rail {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 82px;
+      opacity: 0.5;
+      background-repeat: repeat-y;
+      background-size: 82px 360px;
+      background-position: top center;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='82' height='360' viewBox='0 0 82 360'%3E%3Crect width='82' height='360' fill='none'/%3E%3Cg fill='none' stroke='%23E8E0CC' stroke-opacity='0.24' stroke-width='1'%3E%3Cpath d='M8 0 V360'/%3E%3Cpath d='M74 0 V360'/%3E%3Cpath d='M18 0 V360'/%3E%3Cpath d='M64 0 V360'/%3E%3C/g%3E%3Cg fill='none' stroke='%231FB5B7' stroke-opacity='0.34' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M26 18 H52 V42 H34 V70 H56 V98 H30 V128 H58 V158 H36 V188 H60 V216 H34 V246 H54 V274 H28 V304 H50 V336'/%3E%3Cpath d='M44 28 H62 V54 H46 V82 H64 V112 H42 V142 H60 V172 H46 V202 H64 V232 H40 V262 H58 V292 H44 V322 H60'/%3E%3C/g%3E%3Cg fill='none' stroke='%23E85A1F' stroke-opacity='0.3' stroke-width='1'%3E%3Ccircle cx='26' cy='18' r='3.4'/%3E%3Ccircle cx='34' cy='70' r='3.4'/%3E%3Ccircle cx='58' cy='158' r='3.4'/%3E%3Ccircle cx='34' cy='246' r='3.4'/%3E%3Ccircle cx='50' cy='336' r='3.4'/%3E%3Ccircle cx='64' cy='112' r='3.4'/%3E%3Ccircle cx='40' cy='262' r='3.4'/%3E%3C/g%3E%3Cg fill='%23E8E0CC' fill-opacity='0.22'%3E%3Ccircle cx='26' cy='18' r='1.25'/%3E%3Ccircle cx='34' cy='70' r='1.25'/%3E%3Ccircle cx='58' cy='158' r='1.25'/%3E%3Ccircle cx='34' cy='246' r='1.25'/%3E%3Ccircle cx='50' cy='336' r='1.25'/%3E%3Ccircle cx='64' cy='112' r='1.25'/%3E%3Ccircle cx='40' cy='262' r='1.25'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .field-rail.left {
+      left: 0;
+    }
+
+    .field-rail.right {
+      right: 0;
+      transform: scaleX(-1);
+      transform-origin: center;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background: radial-gradient(circle at 80% 10%, rgba(31, 181, 183, 0.05), transparent 30%), radial-gradient(circle at 8% 80%, rgba(232, 90, 31, 0.05), transparent 24%);
+      pointer-events: none;
+    }
+
+    main,
+    footer {
+      position: relative;
+      z-index: 2;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--sienna);
+      outline-offset: 3px;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    .anchor-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      min-height: var(--nav-height);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 0.75rem 2rem;
+      background: rgba(10, 31, 46, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--paper-edge);
+      font-family: "JetBrains Mono", monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    .brand {
+      color: var(--turquoise);
+      font-size: 0.85rem;
+      white-space: nowrap;
+      font-weight: 500;
+    }
+
+    .anchor-nav ul {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 0.72rem;
+    }
+
+    .anchor-nav a:not(.brand) {
+      color: var(--paper-warm);
+      opacity: 0.82;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 0.1rem;
+    }
+
+    .anchor-nav a:hover,
+    .anchor-nav a:focus-visible {
+      color: var(--paper-warm);
+      border-bottom-color: var(--sienna);
+    }
+
+    .container,
+    .movement,
+    .hero {
+      width: min(calc(100% - 3rem), var(--max));
+      margin: 0 auto;
+    }
+
+    .hero {
+      min-height: 90vh;
+      padding: calc(var(--nav-height) + 6rem) 0 7rem;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--paper-edge);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      right: clamp(1rem, 6vw, 4rem);
+      top: clamp(7rem, 16vh, 10rem);
+      width: min(38vw, 430px);
+      height: min(56vh, 520px);
+      opacity: 0.26;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='430' height='520' viewBox='0 0 430 520'%3E%3Crect width='430' height='520' fill='none'/%3E%3Cg fill='none' stroke='%23E8E0CC' stroke-opacity='0.14' stroke-width='1.4'%3E%3Cpath d='M64 486 V166 C64 92 122 38 214 38 C306 38 366 92 366 166 V486'/%3E%3Cpath d='M90 486 V184 C90 118 138 70 214 70 C290 70 338 118 338 184 V486'/%3E%3C/g%3E%3Cg fill='none' stroke='%231FB5B7' stroke-opacity='0.38' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M126 440 V226 H164 V192 H206 V150 H252 V192 H292 V226 V440'/%3E%3Cpath d='M112 398 H166 V366 H206 V328 H248 V366 H304'/%3E%3Cpath d='M124 276 H174 V244 H214 V212 H258 V244 H304'/%3E%3Cpath d='M146 162 H188 V130 H214 V100 H242 V130 H284'/%3E%3Cpath d='M214 100 V440'/%3E%3Cpath d='M164 192 V440'/%3E%3Cpath d='M252 192 V440'/%3E%3C/g%3E%3Cg fill='none' stroke='%23E85A1F' stroke-opacity='0.3' stroke-width='1'%3E%3Ccircle cx='214' cy='100' r='4.5'/%3E%3Ccircle cx='164' cy='192' r='4'/%3E%3Ccircle cx='252' cy='192' r='4'/%3E%3Ccircle cx='214' cy='328' r='4'/%3E%3Ccircle cx='126' cy='440' r='4'/%3E%3Ccircle cx='292' cy='440' r='4'/%3E%3C/g%3E%3Cg fill='%23E8E0CC' fill-opacity='0.24'%3E%3Ccircle cx='214' cy='100' r='1.4'/%3E%3Ccircle cx='164' cy='192' r='1.2'/%3E%3Ccircle cx='252' cy='192' r='1.2'/%3E%3Ccircle cx='214' cy='328' r='1.2'/%3E%3Ccircle cx='126' cy='440' r='1.2'/%3E%3Ccircle cx='292' cy='440' r='1.2'/%3E%3C/g%3E%3C/svg%3E") no-repeat center / contain;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      width: min(100%, 1080px);
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(280px, 340px);
+      gap: clamp(2rem, 4.5vw, 4.5rem);
+      align-items: center;
+    }
+
+    .section-marker {
+      margin: 0 0 1.2rem;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--turquoise);
+    }
+
+    .site-name {
+      margin: 0;
+      font-family: var(--display);
+      font-size: clamp(3.75rem, 9.5vw, 8.25rem);
+      font-weight: 800;
+      line-height: 0.92;
+      letter-spacing: 0.045em;
+      color: var(--turquoise);
+      text-transform: uppercase;
+    }
+
+    .site-name span {
+      display: block;
+    }
+
+    .site-name .rule {
+      width: 2.4rem;
+      height: 2px;
+      background: var(--sienna);
+      margin: 1.2rem 0 1.15rem 0.08em;
+    }
+
+    .hero-text {
+      max-width: 40rem;
+    }
+
+    .tagline {
+      max-width: 36rem;
+      margin: 2rem 0 0;
+      font-size: clamp(1.3rem, 2vw, 1.75rem);
+      line-height: 1.35;
+      font-style: italic;
+      color: var(--paper-warm);
+    }
+
+    .hero-credit {
+      max-width: 39rem;
+      margin: 1.25rem 0 0;
+      color: rgba(232, 224, 204, 0.9);
+      font-size: clamp(1.02rem, 1.4vw, 1.16rem);
+      line-height: 1.55;
+    }
+
+    .hero-credit strong {
+      color: var(--paper-warm);
+      font-weight: 600;
+    }
+
+    .bio {
+      margin: 1.15rem 0 0;
+      max-width: 30rem;
+      color: rgba(232, 224, 204, 0.66);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero-portrait {
+      justify-self: start;
+      align-self: center;
+      width: clamp(280px, 28vw, 340px);
+      border: 1px solid rgba(232, 90, 31, 0.8);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      padding: 1rem;
+    }
+
+    .portrait-card {
+      width: 100%;
+      aspect-ratio: 1;
+      background: var(--paper);
+    }
+
+    .hero-accent {
+      position: absolute;
+      right: 1rem;
+      bottom: 3rem;
+      width: 220px;
+      opacity: 0.32;
+      color: var(--turquoise);
+      pointer-events: none;
+    }
+
+    .movement {
+      padding: clamp(5.5rem, 9vw, 8.5rem) 0;
+      border-bottom: 1px solid var(--paper-edge);
+    }
+
+    .section-headline {
+      position: relative;
+      display: inline-block;
+      margin: 0;
+      padding-bottom: 1.2rem;
+      font-family: var(--display);
+      font-size: clamp(2.55rem, 5.4vw, 4.2rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--turquoise);
+    }
+
+    .section-headline::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 146px;
+      height: 20px;
+      opacity: 0.58;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='146' height='20' viewBox='0 0 146 20'%3E%3Cg fill='none' stroke='%231FB5B7' stroke-opacity='0.58' stroke-width='1.35' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 10 H38 V4 H62 V10 H90 V16 H144'/%3E%3C/g%3E%3Cg fill='none' stroke='%23E85A1F' stroke-opacity='0.42' stroke-width='1'%3E%3Ccircle cx='2' cy='10' r='3'/%3E%3Ccircle cx='62' cy='10' r='3'/%3E%3Ccircle cx='144' cy='16' r='3'/%3E%3C/g%3E%3Cg fill='%23E8E0CC' fill-opacity='0.26'%3E%3Ccircle cx='2' cy='10' r='1.1'/%3E%3Ccircle cx='62' cy='10' r='1.1'/%3E%3Ccircle cx='144' cy='16' r='1.1'/%3E%3C/g%3E%3C/svg%3E") no-repeat left center / contain;
+      pointer-events: none;
+    }
+
+    .section-intro {
+      max-width: 42rem;
+      margin: 1.4rem 0 3.4rem;
+      color: rgba(232, 224, 204, 0.82);
+      font-size: 1.14rem;
+    }
+
+    .paper-panel {
+      max-width: 680px;
+      background: var(--paper);
+      color: var(--charcoal);
+      padding: 3rem;
+      box-shadow: var(--shadow);
+    }
+
+    .paper-panel p:first-child {
+      margin-top: 0;
+    }
+
+    .paper-panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .story-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 680px) minmax(260px, 360px);
+      gap: clamp(2.25rem, 5vw, 5rem);
+      align-items: start;
+      margin-top: 2.6rem;
+    }
+
+    .story-panel {
+      max-width: none;
+    }
+
+    .story-aside {
+      color: var(--paper-warm);
+      padding: 0.55rem 0 0 1.55rem;
+      border-left: 1px solid rgba(241, 232, 210, 0.22);
+    }
+
+    .aside-kicker {
+      margin: 0 0 0.85rem;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--sienna);
+    }
+
+    .aside-thesis {
+      margin: 0;
+      font-family: var(--display);
+      font-size: clamp(1.45rem, 2.3vw, 2.05rem);
+      font-weight: 700;
+      line-height: 1.22;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+      color: var(--paper-warm);
+    }
+
+    .fact-stack {
+      margin: 2rem 0 0;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .fact-stack div {
+      padding-top: 1rem;
+      border-top: 1px solid var(--paper-edge);
+    }
+
+    .fact-stack dt {
+      margin: 0 0 0.2rem;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--turquoise);
+    }
+
+    .fact-stack dd {
+      margin: 0;
+      color: rgba(232, 224, 204, 0.78);
+      font-size: 0.98rem;
+      line-height: 1.5;
+    }
+
+    .paper-panel h3 {
+      margin: 0 0 1rem;
+      font-family: var(--display);
+      font-size: 2.15rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.06em;
+      color: var(--charcoal);
+      text-transform: uppercase;
+    }
+
+    .drop-cap::first-letter {
+      float: left;
+      margin: 0.1rem 0.75rem 0 0;
+      font-family: var(--display);
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 0.82;
+      color: var(--sienna);
+    }
+
+    .pull-quote {
+      max-width: 780px;
+      margin: 4.5rem 0 0 auto;
+      padding: 0;
+      color: var(--sienna);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      line-height: 1.32;
+      font-style: italic;
+    }
+
+    #story {
+      padding-bottom: clamp(2.75rem, 4vw, 4rem);
+    }
+
+    #story .story-layout {
+      margin-top: clamp(1.8rem, 3vw, 2.25rem);
+      margin-bottom: 0;
+    }
+
+    #story .pull-quote {
+      max-width: 900px;
+      margin: clamp(1.1rem, 2vw, 1.75rem) auto 0;
+      text-align: center;
+      font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+      line-height: 1.24;
+    }
+
+    #practice {
+      padding-top: clamp(4rem, 6vw, 5.75rem);
+    }
+
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 3rem 4rem;
+      margin-top: 3rem;
+    }
+
+    .principle {
+      max-width: 34rem;
+      color: rgba(232, 224, 204, 0.82);
+    }
+
+    .principle-number {
+      margin: 0 0 0.75rem;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 1.5rem;
+      color: var(--turquoise);
+      letter-spacing: 0.08em;
+    }
+
+    .principle h3 {
+      margin: 0 0 0.75rem;
+      font-family: var(--display);
+      font-size: 2.35rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.065em;
+      color: var(--paper-warm);
+      text-transform: uppercase;
+    }
+
+    .principle p:last-child {
+      margin: 0;
+      font-size: 0.98rem;
+    }
+
+    .section-outro {
+      max-width: var(--body);
+      margin: 3rem 0 0;
+      color: rgba(232, 224, 204, 0.84);
+    }
+
+    .section-outro a,
+    .paper-panel a,
+    .clew-link,
+    .other-entry a,
+    .civic-entry a {
+      color: var(--sienna);
+      border-bottom: 1px solid currentColor;
+      text-underline-offset: 0.2em;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.92rem;
+    }
+
+    .section-outro a:hover,
+    .paper-panel a:hover,
+    .clew-link:hover,
+    .other-entry a:hover,
+    .civic-entry a:hover {
+      color: var(--turquoise);
+    }
+
+    .suite-intro {
+      max-width: 46rem;
+    }
+
+
+    .suite-map {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1px;
+      max-width: 1120px;
+      margin: 2.6rem 0 4rem;
+      border-top: 1px solid var(--paper-edge);
+      border-bottom: 1px solid var(--paper-edge);
+      background: rgba(241, 232, 210, 0.12);
+    }
+
+    .suite-map article {
+      padding: 1.45rem 1.35rem 1.5rem;
+      background: rgba(10, 31, 46, 0.8);
+    }
+
+    .suite-map-label {
+      margin: 0 0 0.65rem;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--sienna);
+    }
+
+    .suite-map h3 {
+      margin: 0 0 0.5rem;
+      font-family: var(--display);
+      font-size: 1.55rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+      color: var(--paper-warm);
+    }
+
+    .suite-map p:last-child {
+      margin: 0;
+      color: rgba(232, 224, 204, 0.76);
+      font-size: 0.93rem;
+      line-height: 1.55;
+    }
+
+    .clew-list {
+      display: grid;
+      gap: clamp(1.7rem, 3vw, 2.55rem);
+    }
+
+    .clew-entry {
+      display: grid;
+      grid-template-columns: minmax(145px, 185px) minmax(0, 1fr);
+      gap: clamp(2rem, 4.4vw, 3.65rem);
+      align-items: start;
+      background: var(--paper);
+      color: var(--charcoal);
+      padding: clamp(1.9rem, 4vw, 3.25rem);
+      box-shadow: var(--shadow);
+    }
+
+    .clew-logo {
+      width: 185px;
+      height: 185px;
+      background: var(--paper);
+      border: 1px solid rgba(31, 31, 31, 0.18);
+      display: grid;
+      place-items: center;
+    }
+
+    .placeholder-mark {
+      width: 100%;
+      height: 100%;
+    }
+
+    .clew-name {
+      margin: 0;
+      font-family: var(--display);
+      font-size: clamp(1.95rem, 3.1vw, 2.75rem);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+      color: var(--charcoal);
+    }
+
+    .clew-engine {
+      display: inline-block;
+      margin-left: 0.35rem;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.76rem;
+      letter-spacing: 0.08em;
+      vertical-align: middle;
+      color: rgba(31, 31, 31, 0.58);
+    }
+
+    .clew-content {
+      padding-top: 0.15rem;
+    }
+
+    .clew-content .rule-line {
+      width: 3.5rem;
+      height: 2px;
+      margin: 1rem 0 1.15rem;
+      background: var(--sienna);
+    }
+
+    .clew-description {
+      margin: 0;
+      max-width: 50rem;
+      color: var(--charcoal);
+    }
+
+    .clew-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 0.6rem;
+      align-items: center;
+      margin: 1.25rem 0 0;
+      color: rgba(31, 31, 31, 0.62);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.8rem;
+      line-height: 1.6;
+    }
+
+    .clew-tech span:not(:last-child)::after {
+      content: "·";
+      margin-left: 0.6rem;
+      color: rgba(31, 31, 31, 0.38);
+    }
+
+    .clew-meta {
+      margin: 1rem 0 0;
+      color: rgba(31, 31, 31, 0.72);
+      font-style: italic;
+    }
+
+    .clew-link {
+      display: inline-block;
+      margin-top: 1.2rem;
+    }
+
+    .civic-panel {
+      max-width: 860px;
+    }
+
+    .civic-entry h3,
+    .other-entry h3 {
+      margin: 0 0 0.55rem;
+      font-family: var(--display);
+      font-size: 2.15rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.06em;
+      color: var(--charcoal);
+      text-transform: uppercase;
+    }
+
+    .civic-entry p,
+    .other-entry p {
+      margin: 0 0 0.75rem;
+      color: var(--charcoal);
+    }
+
+    .entry-divider {
+      margin: 2rem 0;
+      border: 0;
+      border-top: 1px solid rgba(232, 90, 31, 0.45);
+    }
+
+    .other-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .other-entry {
+      background: var(--paper);
+      color: var(--charcoal);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    #wins {
+      position: relative;
+      overflow: hidden;
+    }
+
+    #wins::before {
+      content: "";
+      position: absolute;
+      right: clamp(-1rem, 2vw, 1rem);
+      top: 8rem;
+      width: min(26vw, 320px);
+      height: min(70vh, 560px);
+      opacity: 0.2;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='560' viewBox='0 0 320 560'%3E%3Cg fill='none' stroke='%23E8E0CC' stroke-opacity='0.12' stroke-width='1'%3E%3Cpath d='M80 18 V542'/%3E%3Cpath d='M240 18 V542'/%3E%3C/g%3E%3Cg fill='none' stroke='%231FB5B7' stroke-opacity='0.34' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M90 36 H156 V66 H124 V102 H186 V136 H138 V174 H204 V210 H152 V248 H214 V286 H148 V324 H208 V360 H140 V396 H198 V432 H132 V470 H192 V510'/%3E%3Cpath d='M154 24 V510'/%3E%3Cpath d='M218 54 V470'/%3E%3C/g%3E%3Cg fill='none' stroke='%23E85A1F' stroke-opacity='0.26' stroke-width='1'%3E%3Ccircle cx='90' cy='36' r='4'/%3E%3Ccircle cx='186' cy='136' r='4'/%3E%3Ccircle cx='214' cy='286' r='4'/%3E%3Ccircle cx='198' cy='432' r='4'/%3E%3Ccircle cx='192' cy='510' r='4'/%3E%3C/g%3E%3Cg fill='%23E8E0CC' fill-opacity='0.2'%3E%3Ccircle cx='90' cy='36' r='1.25'/%3E%3Ccircle cx='186' cy='136' r='1.25'/%3E%3Ccircle cx='214' cy='286' r='1.25'/%3E%3Ccircle cx='198' cy='432' r='1.25'/%3E%3Ccircle cx='192' cy='510' r='1.25'/%3E%3C/g%3E%3C/svg%3E") no-repeat center top / contain;
+      pointer-events: none;
+    }
+
+    #wins > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .wins-list {
+      margin-top: 3rem;
+      max-width: 980px;
+      display: grid;
+      gap: 1.2rem;
+    }
+
+    .win-row {
+      display: grid;
+      grid-template-columns: 90px 150px minmax(0, 1fr);
+      gap: 1.25rem;
+      align-items: baseline;
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid var(--paper-edge);
+    }
+
+    .win-year {
+      color: var(--turquoise);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+    }
+
+    .win-result {
+      color: var(--sienna);
+      font-style: italic;
+    }
+
+    .win-name {
+      color: var(--paper-warm);
+    }
+
+    .final-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .final-grid .paper-panel {
+      max-width: none;
+    }
+
+    .contact-links {
+      list-style: none;
+      margin: 1.4rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.6rem;
+    }
+
+    footer {
+      width: min(calc(100% - 3rem), var(--max));
+      margin: 0 auto;
+      padding: 4rem 0 5rem;
+      text-align: center;
+      color: rgba(232, 224, 204, 0.5);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+    }
+
+    footer p {
+      margin: 0.35rem 0;
+    }
+
+    @media (max-width: 980px) {
+      .anchor-nav {
+        padding-inline: 1rem;
+      }
+
+      .anchor-nav ul {
+        gap: 0.75rem;
+      }
+
+      .anchor-nav li:nth-child(n+5) {
+        display: none;
+      }
+
+      .hero-grid,
+      .story-layout,
+      .clew-entry,
+      .final-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .suite-map,
+      .other-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .hero-portrait {
+        justify-self: start;
+        width: min(100%, 320px);
+      }
+
+      .story-aside {
+        max-width: 680px;
+        padding-top: 0;
+      }
+
+      .clew-logo {
+        width: 160px;
+        height: 160px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      #story {
+        padding-bottom: 3.5rem;
+      }
+
+      #story .story-layout {
+        margin-top: 1.5rem;
+      }
+
+      #story .pull-quote {
+        margin-top: 1.35rem;
+        text-align: left;
+        font-size: clamp(1.25rem, 6vw, 1.55rem);
+      }
+
+      #practice {
+        padding-top: 3.5rem;
+      }
+
+      .field-rail {
+        width: 50px;
+        opacity: 0.34;
+        background-size: 50px 320px;
+      }
+
+      .hero::before {
+        width: min(60vw, 240px);
+        height: min(46vh, 280px);
+        right: 0.5rem;
+        top: calc(var(--nav-height) + 3.25rem);
+        opacity: 0.16;
+      }
+
+      #wins::before {
+        width: 170px;
+        opacity: 0.12;
+      }
+
+      :root {
+        --nav-height: 58px;
+      }
+
+      .container,
+      .movement,
+      .hero,
+      footer {
+        width: min(calc(100% - 2rem), var(--max));
+      }
+
+      .anchor-nav ul {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: calc(var(--nav-height) + 4rem);
+        padding-bottom: 4rem;
+      }
+
+      .movement {
+        padding: 4rem 0;
+      }
+
+      .paper-panel,
+      .other-entry,
+      .clew-entry {
+        padding: 1.5rem;
+      }
+
+      .site-name {
+        font-size: clamp(3.35rem, 16vw, 5.8rem);
+      }
+
+      .story-layout {
+        margin-top: 2rem;
+      }
+
+      .story-aside {
+        padding-left: 1.1rem;
+      }
+
+      .principles-grid,
+      .other-grid,
+      .suite-map {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .win-row {
+        grid-template-columns: 1fr;
+        gap: 0.15rem;
+      }
+
+      .pull-quote {
+        margin-top: 3rem;
+      }
+
+      #story {
+        padding-bottom: 3.5rem;
+      }
+
+      #story .pull-quote {
+        margin-top: 2.25rem;
+        text-align: left;
+      }
+
+      .hero-accent {
+        display: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="field-rails" aria-hidden="true">
+    <span class="field-rail left"></span>
+    <span class="field-rail right"></span>
+  </div>
+
+  <nav class="anchor-nav" aria-label="Section navigation">
+    <a href="#identity" class="brand" aria-label="Clew Labs home">CLEW · LABS</a>
+    <ul>
+      <li><a href="#story">§ 02 Story</a></li>
+      <li><a href="#practice">§ 03 Practice</a></li>
+      <li><a href="#suite">§ 04 Suite</a></li>
+      <li><a href="#civic">§ 05 Civic</a></li>
+      <li><a href="#other">§ 06 Other</a></li>
+      <li><a href="#wins">§ 07 Wins</a></li>
+      <li><a href="#contact">§ 08 Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="identity" class="hero" aria-labelledby="identity-title">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="section-marker">§ 01 Identity</p>
+          <h1 id="identity-title" class="site-name">
+            <span>CLEW</span>
+            <span class="rule" aria-hidden="true"></span>
+            <span>LABS</span>
+          </h1>
+          <p class="tagline">Tools that help systems explain themselves.</p>
+          <p class="hero-credit">Built by <strong>L. Cordero</strong>, a court operations leader using AI to make complex systems more inspectable.</p>
+          <p class="bio">Santa Barbara, California</p>
+        </div>
+        <div class="hero-portrait" aria-label="Illustrated portrait placeholder for L. Cordero">
+          <svg class="portrait-card" viewBox="0 0 360 360" role="img" aria-labelledby="portrait-title portrait-desc">
+            <title id="portrait-title">Portrait placeholder</title>
+            <desc id="portrait-desc">A cream toned illustrated placeholder portrait for L. Cordero.</desc>
+            <rect width="360" height="360" fill="#F1E8D2"/>
+            <path d="M77 310 C96 238 102 144 176 92 C247 142 269 217 287 310" fill="none" stroke="#1F1F1F" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="180" cy="142" r="62" fill="none" stroke="#1F1F1F" stroke-width="5"/>
+            <path d="M126 134 C146 92 211 78 240 126" fill="none" stroke="#E85A1F" stroke-width="5" stroke-linecap="round"/>
+            <path d="M150 164 C166 176 194 176 210 164" fill="none" stroke="#1F1F1F" stroke-width="4" stroke-linecap="round"/>
+            <path d="M104 270 C145 244 210 244 256 270" fill="none" stroke="#1FB5B7" stroke-width="5" stroke-linecap="round"/>
+            <path d="M83 75 L130 75 L130 102 L168 102" fill="none" stroke="#1FB5B7" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="83" cy="75" r="5" fill="#E85A1F"/>
+            <circle cx="168" cy="102" r="5" fill="#E85A1F"/>
+            <text x="180" y="330" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="2" fill="#1F1F1F">L. CORDERO</text>
+          </svg>
+        </div>
+      </div>
+      <svg class="hero-accent" viewBox="0 0 260 140" aria-hidden="true">
+        <path d="M8 30 H62 V58 H118 V88 H196 V116 H244" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M42 12 V30 M118 58 V22 M196 88 V42" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="8" cy="30" r="4" fill="#E85A1F"/>
+        <circle cx="118" cy="58" r="4" fill="#E85A1F"/>
+        <circle cx="244" cy="116" r="4" fill="#E85A1F"/>
+      </svg>
+    </section>
+
+    <section id="story" class="movement" aria-labelledby="story-title">
+      <p class="section-marker">§ 02</p>
+      <h2 id="story-title" class="section-headline">Story</h2>
+      <div class="story-layout">
+        <div class="paper-panel story-panel">
+          <p class="drop-cap">I manage courtroom operations at Santa Barbara Superior Court. Ten years in courts, watching systems work, fail, and get blamed on the wrong thing. I started building AI tools in July 2025. I have not stopped.</p>
+          <p>The work is not weekend tutorials. It is deployed products solving real problems: developer growth tracked from actual code, reasoning preserved across fast moving AI builds, agent readiness scanning for the web's next audience, IT support transparency for people who deserve to know what is happening with their tickets.</p>
+          <p>I do not write code from scratch. I provide creative direction and validation. I work with AI tools, compare their outputs, choose the best pieces, and stitch them together into something that works. The AI generates. I direct. The output is mine. That is a deliberate workflow, not a limitation.</p>
+        </div>
+        <aside class="story-aside" aria-label="Clew Labs operating context">
+          <p class="aside-kicker">Operating context</p>
+          <p class="aside-thesis">Started in a courtroom. Built for systems that need to explain themselves.</p>
+          <dl class="fact-stack">
+            <div>
+              <dt>10 years in courts</dt>
+              <dd>Operational judgment shaped by public service, deadlines, constraints, and real consequences.</dd>
+            </div>
+            <div>
+              <dt>AI builder since 2025</dt>
+              <dd>Fast iteration with deliberate validation, documentation, and human review.</dd>
+            </div>
+            <div>
+              <dt>Open source tools</dt>
+              <dd>Projects built to make reasoning, readiness, quality, and trust more inspectable.</dd>
+            </div>
+            <div>
+              <dt>Public sector lens</dt>
+              <dd>Technology judged by whether people can understand it, use it, and rely on it.</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+      <blockquote class="pull-quote">
+        Every tool I build does the same structural thing.<br>
+        It helps a system explain itself to the people who use it.
+      </blockquote>
+    </section>
+
+    <section id="practice" class="movement" aria-labelledby="practice-title">
+      <p class="section-marker">§ 03</p>
+      <h2 id="practice-title" class="section-headline">Practice</h2>
+      <p class="section-intro">Four principles, extracted from shipping. Not aspirational. Proven.</p>
+      <div class="principles-grid">
+        <article class="principle">
+          <p class="principle-number">01</p>
+          <h3>Occam's Razor</h3>
+          <p>Solve one problem completely before adding the next. The simplest solution that ships beats the ambitious one that crashes.</p>
+        </article>
+        <article class="principle">
+          <p class="principle-number">02</p>
+          <h3>Single Responsibility</h3>
+          <p>Every component does one thing well. No Swiss Army knives.</p>
+        </article>
+        <article class="principle">
+          <p class="principle-number">03</p>
+          <h3>Foundation First</h3>
+          <p>Real integrations over mocked features. Production architecture over quick hacks. This is always a v1, not a final form.</p>
+        </article>
+        <article class="principle">
+          <p class="principle-number">04</p>
+          <h3>Operational Thinking</h3>
+          <p>Nine years in judicial systems means I know implementations have real world consequences. That instinct does not turn off.</p>
+        </article>
+      </div>
+      <p class="section-outro">The full set lives in <a href="https://github.com/earlgreyhot1701D" target="_blank" rel="noreferrer">BUILD PRINCIPLES.md on GitHub</a>. Thirty eight principles. Pull what is useful.</p>
+    </section>
+
+    <section id="suite" class="movement" aria-labelledby="suite-title">
+      <p class="section-marker">§ 04</p>
+      <h2 id="suite-title" class="section-headline">The Clew Suite</h2>
+      <p class="section-intro suite-intro">Named for the thread Ariadne gave Theseus to navigate the labyrinth and find his way back. A suite of tools for AI native builders who move fast and need infrastructure that keeps up. Each tool solves one problem completely. They are designed to work together, but they do not have to.</p>
+      <div class="suite-map" aria-label="Suggested starting points in the Clew Suite">
+        <article>
+          <p class="suite-map-label">Start here</p>
+          <h3>AgentisLux</h3>
+          <p>The clearest expression of the second audience idea: what AI agents experience when they try to use the web.</p>
+        </article>
+        <article>
+          <p class="suite-map-label">Evidence</p>
+          <h3>Janus Clew</h3>
+          <p>Measures actual coding growth from shipped work so progress is visible, not self reported.</p>
+        </article>
+        <article>
+          <p class="suite-map-label">Memory</p>
+          <h3>Ariadne Clew</h3>
+          <p>Preserves reasoning across fast AI assisted builds before the thread disappears.</p>
+        </article>
+        <article>
+          <p class="suite-map-label">Receipts</p>
+          <h3>README Clew</h3>
+          <p>Audits documentation against code so claims stay in sync with evidence.</p>
+        </article>
+      </div>
+      <div class="clew-list">
+
+        <article class="clew-entry">
+          <div class="clew-logo"><svg class="placeholder-mark" viewBox="0 0 200 200" role="img" aria-label="AgentisLux placeholder logo"><rect width="200" height="200" fill="#F1E8D2"/><circle cx="100" cy="100" r="65" fill="none" stroke="#1F1F1F" stroke-width="3"/><path d="M52 102 H88 V72 H122 V102 H148" fill="none" stroke="#1FB5B7" stroke-width="5"/><circle cx="52" cy="102" r="5" fill="#E85A1F"/><circle cx="148" cy="102" r="5" fill="#E85A1F"/><text x="100" y="159" text-anchor="middle" font-family="Cinzel, Georgia" font-size="28" letter-spacing="2" fill="#1F1F1F">AgentisLux</text></svg></div>
+          <div class="clew-content">
+            <h3 class="clew-name">AgentisLux <span class="clew-engine">Perseus Clew</span></h3>
+            <div class="rule-line" aria-hidden="true"></div>
+            <p class="clew-description">Agent readiness scanning for the web's next audience. Paste a URL or upload an OpenAPI spec. Get a unified report on what AI agents experience when they try to use your product. Frontend and API. Six categories each. Findings only, no fix suggestions. Methodology fully transparent and published.</p>
+            <p class="clew-tech"><span>AWS Lambda</span><span>Bedrock</span><span>Claude Haiku 4.5</span><span>DynamoDB</span><span>React</span><span>TypeScript</span></p>
+            <p class="clew-meta">Currently building. Launching with Code with Claude Extended, May 2026.</p>
+            <a href="https://agentislux.io" class="clew-link" target="_blank" rel="noreferrer">Read more at agentislux.io →</a>
+          </div>
+        </article>
+
+        <article class="clew-entry">
+          <div class="clew-logo"><svg class="placeholder-mark" viewBox="0 0 200 200" role="img" aria-label="Janus Clew placeholder logo"><rect width="200" height="200" fill="#F1E8D2"/><path d="M100 35 C65 55 55 90 74 128 C86 150 113 150 126 128 C146 90 135 55 100 35Z" fill="none" stroke="#1F1F1F" stroke-width="4"/><path d="M100 42 V146" stroke="#E85A1F" stroke-width="4"/><path d="M77 82 C91 74 101 74 114 82 M77 106 C91 114 101 114 114 106" fill="none" stroke="#1FB5B7" stroke-width="4" stroke-linecap="round"/><text x="100" y="171" text-anchor="middle" font-family="Cinzel, Georgia" font-size="30" letter-spacing="2" fill="#1F1F1F">Janus</text></svg></div>
+          <div class="clew-content">
+            <h3 class="clew-name">Janus Clew</h3>
+            <div class="rule-line" aria-hidden="true"></div>
+            <p class="clew-description">You have shipped three projects in three months. You are definitely better, but can you prove it? Janus reads your actual code, measures complexity objectively, and exports proof you can share. Not vibes. Not self reporting. Evidence.</p>
+            <p class="clew-tech"><span>Python</span><span>FastAPI</span><span>React</span><span>AWS AgentCore</span></p>
+            <p class="clew-meta">AWS Global Vibe Hackathon 2025 Winner</p>
+            <a href="https://github.com/earlgreyhot1701D/janus-clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/janus-clew →</a>
+          </div>
+        </article>
+
+        <article class="clew-entry">
+          <div class="clew-logo"><svg class="placeholder-mark" viewBox="0 0 200 200" role="img" aria-label="Ariadne Clew placeholder logo"><rect width="200" height="200" fill="#F1E8D2"/><path d="M58 142 C44 92 78 56 116 66 C152 75 155 120 124 132 C95 143 76 119 90 96 C101 78 127 85 128 104" fill="none" stroke="#1F1F1F" stroke-width="4" stroke-linecap="round"/><path d="M58 142 C80 147 110 152 144 162" stroke="#E85A1F" stroke-width="4" stroke-linecap="round"/><circle cx="144" cy="162" r="5" fill="#1FB5B7"/><text x="100" y="36" text-anchor="middle" font-family="Cinzel, Georgia" font-size="26" letter-spacing="2" fill="#1F1F1F">Ariadne</text></svg></div>
+          <div class="clew-content">
+            <h3 class="clew-name">Ariadne Clew</h3>
+            <div class="rule-line" aria-hidden="true"></div>
+            <p class="clew-description">You build fast. You iterate messy. You lose track of why you made choices. Ariadne turns chaotic LLM chat sessions into structured clarity, capturing the aha moments, design tradeoffs, and code decisions that disappear when you move too fast for version control. Works with Claude, ChatGPT, DeepSeek, whatever you use.</p>
+            <p class="clew-tech"><span>Python</span><span>Claude</span><span>AWS Bedrock</span></p>
+            <a href="https://github.com/earlgreyhot1701D/Ariadne-Clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/Ariadne-Clew →</a>
+          </div>
+        </article>
+
+        <article class="clew-entry">
+          <div class="clew-logo"><svg class="placeholder-mark" viewBox="0 0 200 200" role="img" aria-label="Memoria Clew placeholder logo"><rect width="200" height="200" fill="#F1E8D2"/><path d="M63 52 H137 V150 H63 Z" fill="none" stroke="#1F1F1F" stroke-width="4"/><path d="M76 76 H124 M76 98 H124 M76 120 H108" stroke="#1FB5B7" stroke-width="4" stroke-linecap="round"/><path d="M137 58 L154 58 L154 132 L137 132" fill="none" stroke="#E85A1F" stroke-width="4"/><text x="100" y="180" text-anchor="middle" font-family="Cinzel, Georgia" font-size="27" letter-spacing="2" fill="#1F1F1F">Memoria</text></svg></div>
+          <div class="clew-content">
+            <h3 class="clew-name">Memoria Clew</h3>
+            <div class="rule-line" aria-hidden="true"></div>
+            <p class="clew-description">You save a link while debugging a feature. Later, the link is still there, but the reason you saved it is gone. The context evaporates. Bookmarks do not remember why. Memoria does. Local first research memory that resurfaces what you saved when it becomes relevant again, with transparent reasoning. No black box magic.</p>
+            <p class="clew-tech"><span>TypeScript</span><span>Firebase</span><span>Claude</span></p>
+            <p class="clew-meta">AI Vibe Coding Hackathon 2026, 4th place out of 250</p>
+            <a href="https://github.com/earlgreyhot1701D/memoria-clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/memoria-clew →</a>
+          </div>
+        </article>
+
+        <article class="clew-entry">
+          <div class="clew-logo"><svg class="placeholder-mark" viewBox="0 0 200 200" role="img" aria-label="Metis Clew placeholder logo"><rect width="200" height="200" fill="#F1E8D2"/><path d="M56 72 C84 40 140 54 146 96 C151 134 112 158 78 139 C49 123 39 92 56 72Z" fill="none" stroke="#1F1F1F" stroke-width="4"/><path d="M68 101 H132 M100 69 V134" stroke="#1FB5B7" stroke-width="5" stroke-linecap="round"/><circle cx="100" cy="101" r="10" fill="#E85A1F"/><text x="100" y="176" text-anchor="middle" font-family="Cinzel, Georgia" font-size="31" letter-spacing="2" fill="#1F1F1F">Metis</text></svg></div>
+          <div class="clew-content">
+            <h3 class="clew-name">Metis Clew</h3>
+            <div class="rule-line" aria-hidden="true"></div>
+            <p class="clew-description">When you are learning to code, you hit this wall: the code does not feel clear. You paste snippets into AI tools and get long paragraphs that do not match what you are actually trying to understand. Metis shows you what it does, how it works, and why it was built that way. Validated through user research with career switchers. MVP shipped in 5 weeks.</p>
+            <p class="clew-tech"><span>TypeScript</span><span>Supabase</span><span>Claude</span></p>
+            <a href="https://metis-clew.vercel.app" class="clew-link" target="_blank" rel="noreferrer">metis-clew.vercel.app →</a>
+          </div>
+        </article>
+
+        <article class="clew-entry">
+          <div class="clew-logo"><svg class="placeholder-mark" viewBox="0 0 200 200" role="img" aria-label="Lumen Clew placeholder logo"><rect width="200" height="200" fill="#F1E8D2"/><circle cx="100" cy="91" r="43" fill="none" stroke="#1F1F1F" stroke-width="4"/><path d="M100 35 V52 M100 130 V151 M44 91 H61 M139 91 H156 M65 56 L77 68 M123 114 L136 127 M136 56 L123 68 M77 114 L65 127" stroke="#1FB5B7" stroke-width="4" stroke-linecap="round"/><circle cx="100" cy="91" r="14" fill="#E85A1F"/><text x="100" y="180" text-anchor="middle" font-family="Cinzel, Georgia" font-size="31" letter-spacing="2" fill="#1F1F1F">Lumen</text></svg></div>
+          <div class="clew-content">
+            <h3 class="clew-name">Lumen Clew</h3>
+            <div class="rule-line" aria-hidden="true"></div>
+            <p class="clew-description">Most code feedback comes with judgment baked in. Lumen does not do that. Paste any public GitHub repo URL and get insights across code quality, dependency health, secret detection, and accessibility. Claude translates findings into plain English. Awareness, not shame. Reflection, not prescription.</p>
+            <p class="clew-tech"><span>TypeScript</span><span>React</span><span>Claude</span></p>
+            <a href="https://lumenclew.lovable.app" class="clew-link" target="_blank" rel="noreferrer">lumenclew.lovable.app →</a>
+          </div>
+        </article>
+
+        <article class="clew-entry">
+          <div class="clew-logo"><svg class="placeholder-mark" viewBox="0 0 200 200" role="img" aria-label="Hermes Clew placeholder logo"><rect width="200" height="200" fill="#F1E8D2"/><path d="M55 120 C76 70 124 70 145 120" fill="none" stroke="#1F1F1F" stroke-width="4"/><path d="M82 65 L100 38 L118 65" fill="none" stroke="#E85A1F" stroke-width="4" stroke-linecap="round"/><path d="M76 118 H124 M100 65 V140" stroke="#1FB5B7" stroke-width="4" stroke-linecap="round"/><circle cx="100" cy="140" r="5" fill="#E85A1F"/><text x="100" y="176" text-anchor="middle" font-family="Cinzel, Georgia" font-size="30" letter-spacing="2" fill="#1F1F1F">Hermes</text></svg></div>
+          <div class="clew-content">
+            <h3 class="clew-name">Hermes Clew</h3>
+            <div class="rule-line" aria-hidden="true"></div>
+            <p class="clew-description">The web is about to get a second audience. AI agents cannot use most web apps. They cannot find buttons, fill forms, or navigate. They see a wall of styled divs and bounce. Hermes scans your HTML, JSX, and TSX files and tells you exactly what is broken. The proof of concept that became Perseus.</p>
+            <p class="clew-tech"><span>Python</span><span>Claude</span><span>GitLab Duo</span></p>
+            <p class="clew-meta">GitLab Duo Agent Platform Challenge 2026</p>
+            <a href="https://github.com/earlgreyhot1701D/hermes-clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/hermes-clew →</a>
+          </div>
+        </article>
+
+        <article class="clew-entry">
+          <div class="clew-logo"><svg class="placeholder-mark" viewBox="0 0 200 200" role="img" aria-label="Anton Clew placeholder logo"><rect width="200" height="200" fill="#F1E8D2"/><path d="M60 55 H140 V124 C140 145 123 160 100 166 C77 160 60 145 60 124 Z" fill="none" stroke="#1F1F1F" stroke-width="4"/><path d="M78 102 L95 119 L126 82" fill="none" stroke="#1FB5B7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M62 55 L100 34 L138 55" stroke="#E85A1F" stroke-width="4" fill="none" stroke-linecap="round"/><text x="100" y="188" text-anchor="middle" font-family="Cinzel, Georgia" font-size="31" letter-spacing="2" fill="#1F1F1F">Anton</text></svg></div>
+          <div class="clew-content">
+            <h3 class="clew-name">Anton Clew</h3>
+            <div class="rule-line" aria-hidden="true"></div>
+            <p class="clew-description">AI coding tools are powerful, but they are not inherently safe. Automation can modify sensitive files unintentionally, change configuration without context, and push large batches faster than meaningful human review can happen. Anton is a policy driven CLI that classifies file changes as DENY, NEEDS APPROVAL, or ALLOW before they land. Deterministic rules. No probabilistic guesses. No hallucinations.</p>
+            <p class="clew-tech"><span>TypeScript</span><span>CLI</span></p>
+            <a href="https://github.com/earlgreyhot1701D/anton-clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/anton-clew →</a>
+          </div>
+        </article>
+
+        <article class="clew-entry">
+          <div class="clew-logo"><svg class="placeholder-mark" viewBox="0 0 200 200" role="img" aria-label="README Clew placeholder logo"><rect width="200" height="200" fill="#F1E8D2"/><path d="M52 55 H148 V145 H52 Z" fill="none" stroke="#1F1F1F" stroke-width="4"/><path d="M70 78 H130 M70 99 H124 M70 120 H104" stroke="#1FB5B7" stroke-width="4" stroke-linecap="round"/><path d="M133 121 L148 138 L171 102" fill="none" stroke="#E85A1F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><text x="100" y="181" text-anchor="middle" font-family="Cinzel, Georgia" font-size="28" letter-spacing="2" fill="#1F1F1F">README</text></svg></div>
+          <div class="clew-content">
+            <h3 class="clew-name">README Clew</h3>
+            <div class="rule-line" aria-hidden="true"></div>
+            <p class="clew-description">A tiny tool to keep your receipts. Audits your README against your code. Verifies every claim. Documentation is a contract, code is evidence, truth in sync.</p>
+            <p class="clew-tech"><span>Node</span><span>CLI</span><span>Vitest</span></p>
+            <a href="https://github.com/earlgreyhot1701D/readme-clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/readme-clew →</a>
+          </div>
+        </article>
+
+        <article class="clew-entry">
+          <div class="clew-logo"><svg class="placeholder-mark" viewBox="0 0 200 200" role="img" aria-label="Iris Clew placeholder logo"><rect width="200" height="200" fill="#F1E8D2"/><path d="M36 100 C60 62 140 62 164 100 C140 138 60 138 36 100Z" fill="none" stroke="#1F1F1F" stroke-width="4"/><circle cx="100" cy="100" r="27" fill="none" stroke="#1FB5B7" stroke-width="5"/><circle cx="100" cy="100" r="9" fill="#E85A1F"/><text x="100" y="178" text-anchor="middle" font-family="Cinzel, Georgia" font-size="32" letter-spacing="2" fill="#1F1F1F">Iris</text></svg></div>
+          <div class="clew-content">
+            <h3 class="clew-name">Iris Clew <span class="clew-engine">TicketGlass</span></h3>
+            <div class="rule-line" aria-hidden="true"></div>
+            <p class="clew-description">IT support tickets are a black box. Customers do not know what is happening, why it is happening, or if the same issue will happen again next month. Real time visibility, AI powered explanations, smart solution tracking.</p>
+            <p class="clew-tech"><span>Python</span><span>Claude</span><span>AWS Bedrock</span></p>
+            <p class="clew-meta">SuperHack 2025</p>
+            <a href="https://github.com/earlgreyhot1701D/ticketglass" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/ticketglass →</a>
+          </div>
+        </article>
+
+        <article class="clew-entry">
+          <div class="clew-logo"><svg class="placeholder-mark" viewBox="0 0 200 200" role="img" aria-label="Clew Directive placeholder logo"><rect width="200" height="200" fill="#F1E8D2"/><path d="M50 55 H150 V132 H50 Z" fill="none" stroke="#1F1F1F" stroke-width="4"/><path d="M72 78 H128 M72 100 H116" stroke="#1FB5B7" stroke-width="4" stroke-linecap="round"/><path d="M84 132 L100 160 L116 132" fill="none" stroke="#E85A1F" stroke-width="5" stroke-linejoin="round"/><text x="100" y="36" text-anchor="middle" font-family="Cinzel, Georgia" font-size="24" letter-spacing="2" fill="#1F1F1F">Directive</text></svg></div>
+          <div class="clew-content">
+            <h3 class="clew-name">Clew Directive</h3>
+            <div class="rule-line" aria-hidden="true"></div>
+            <p class="clew-description">AI education is overwhelming. Thousands of courses. Most behind paywalls. Few personalized. Four questions, a personalized learning path from verified free resources, a PDF you keep forever. No signup. No data stored. Multi agent system on AWS serverless. Free, private, accessible to all.</p>
+            <p class="clew-tech"><span>Python</span><span>Next.js</span><span>AWS</span></p>
+            <a href="https://clewdirective.com" class="clew-link" target="_blank" rel="noreferrer">clewdirective.com →</a>
+          </div>
+        </article>
+
+        <article class="clew-entry">
+          <div class="clew-logo"><svg class="placeholder-mark" viewBox="0 0 200 200" role="img" aria-label="Athena Clew placeholder logo"><rect width="200" height="200" fill="#F1E8D2"/><path d="M42 148 H72 V132 H100 V116 H130 V100 H158" fill="none" stroke="#E85A1F" stroke-width="4" stroke-linecap="round"/><circle cx="42" cy="148" r="5" fill="#1FB5B7"/><circle cx="100" cy="116" r="5" fill="#1FB5B7"/><circle cx="158" cy="100" r="5" fill="#1FB5B7"/><text x="100" y="88" text-anchor="middle" font-family="Cinzel, Georgia" font-size="30" letter-spacing="2" fill="#1F1F1F">Athena</text><text x="100" y="120" text-anchor="middle" font-family="Cinzel, Georgia" font-size="30" letter-spacing="2" fill="#1FB5B7">Clew</text></svg></div>
+          <div class="clew-content">
+            <h3 class="clew-name">Athena Clew <span class="clew-engine">Theseus</span></h3>
+            <div class="rule-line" aria-hidden="true"></div>
+            <p class="clew-description">Autonomous debugging agent. Theseus uses deep thinking to analyze errors, search your debugging history, extract reusable principles, and resolve issues without you babysitting the process. Built on Gemini 3 for the Gemini Hackathon. Sometimes the best agent is one that finishes the work while you do something else.</p>
+            <p class="clew-tech"><span>JavaScript</span><span>Gemini 3</span><span>Autonomous Agents</span></p>
+            <p class="clew-meta">Gemini 3 Hackathon submission</p>
+            <a href="https://github.com/earlgreyhot1701D/Athena-Clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/Athena-Clew →</a>
+          </div>
+        </article>
+
+        <article class="clew-entry">
+          <div class="clew-logo"><svg class="placeholder-mark" viewBox="0 0 200 200" role="img" aria-label="Argus Clew placeholder logo"><rect width="200" height="200" fill="#F1E8D2"/><path d="M42 55 C66 28 134 28 158 55 C134 82 66 82 42 55Z" fill="none" stroke="#1F1F1F" stroke-width="4"/><circle cx="100" cy="55" r="14" fill="none" stroke="#E85A1F" stroke-width="4"/><text x="100" y="88" text-anchor="middle" font-family="Cinzel, Georgia" font-size="30" letter-spacing="2" fill="#1F1F1F">Argus</text><text x="100" y="120" text-anchor="middle" font-family="Cinzel, Georgia" font-size="30" letter-spacing="2" fill="#1FB5B7">Clew</text></svg></div>
+          <div class="clew-content">
+            <h3 class="clew-name">Argus Clew</h3>
+            <div class="rule-line" aria-hidden="true"></div>
+            <p class="clew-description">Agent readiness review for AWS commits. Three copy paste prompts that help developers detect structural issues that make web apps hard for AI agents to interpret. Argus scans every commit via CodePipeline. Eyes everywhere, watching for what AI cannot read.</p>
+            <p class="clew-tech"><span>AWS CodePipeline</span><span>Bedrock</span><span>Prompt Engineering</span></p>
+            <a href="https://github.com/earlgreyhot1701D/argus-clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/argus-clew →</a>
+          </div>
+        </article>
+
+        <article class="clew-entry">
+          <div class="clew-logo"><svg class="placeholder-mark" viewBox="0 0 200 200" role="img" aria-label="Clew Quest placeholder logo"><rect width="200" height="200" fill="#F1E8D2"/><path d="M64 44 H136 L150 70 L100 160 L50 70 Z" fill="none" stroke="#1F1F1F" stroke-width="4"/><path d="M73 70 H127 M100 44 V160" stroke="#E85A1F" stroke-width="4" stroke-linecap="round"/><text x="100" y="88" text-anchor="middle" font-family="Cinzel, Georgia" font-size="30" letter-spacing="2" fill="#1F1F1F">Clew</text><text x="100" y="120" text-anchor="middle" font-family="Cinzel, Georgia" font-size="30" letter-spacing="2" fill="#1FB5B7">Quest</text></svg></div>
+          <div class="clew-content">
+            <h3 class="clew-name">Clew Quest</h3>
+            <div class="rule-line" aria-hidden="true"></div>
+            <p class="clew-description">Intelligent open source project discovery powered by Algolia Agent Studio. Answer four questions about what you want to learn and your skill level. Get GitHub projects with AI generated explanations for why each one fits. Built for the Algolia Agent Studio Challenge.</p>
+            <p class="clew-tech"><span>TypeScript</span><span>Algolia Agent Studio</span><span>GitHub API</span></p>
+            <p class="clew-meta">Algolia Agent Studio Challenge Completion</p>
+            <a href="https://github.com/earlgreyhot1701D/clew-quest" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/clew-quest →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="civic" class="movement" aria-labelledby="civic-title">
+      <p class="section-marker">§ 05</p>
+      <h2 id="civic-title" class="section-headline">Civic &amp; Legal AI</h2>
+      <p class="section-intro">Work at the intersection of courts, data, and people who deserve better tools.</p>
+      <div class="paper-panel civic-panel">
+        <article class="civic-entry">
+          <h3>Write of Access</h3>
+          <p>AWS Textract on public court forms, with honest documentation of what it cannot do.</p>
+          <a href="https://github.com/earlgreyhot1701D/write-of-access" target="_blank" rel="noreferrer">github →</a>
+        </article>
+        <hr class="entry-divider">
+        <article class="civic-entry">
+          <h3>Hung Jury</h3>
+          <p>Explored automating Crystal Reports PDFs. The blocker was data quality, not Python. Sometimes the finding is the deliverable.</p>
+          <a href="https://github.com/earlgreyhot1701D/hung-jury" target="_blank" rel="noreferrer">github →</a>
+        </article>
+        <hr class="entry-divider">
+        <article class="civic-entry">
+          <h3>Panoptes Scout</h3>
+          <p>First pass data quality briefing agent for tabular datasets. Google AI Agents capstone.</p>
+          <a href="https://github.com/earlgreyhot1701D/Panoptes-Scout" target="_blank" rel="noreferrer">github →</a>
+        </article>
+        <hr class="entry-divider">
+        <article class="civic-entry">
+          <h3>Permission to Approach the Firewall</h3>
+          <p>AI powered cybersecurity awareness program for court staff. Built with Microsoft 365 Copilot, Claude, and NotebookLM. Three deliverables: phishing scenarios, training materials, and assessment tools. Won the Founderz AI Skills 4 Women Open Challenge.</p>
+          <a href="https://github.com/earlgreyhot1701D/permission-to-approach-the-firewall" target="_blank" rel="noreferrer">github →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="other" class="movement" aria-labelledby="other-title">
+      <p class="section-marker">§ 06</p>
+      <h2 id="other-title" class="section-headline">Other things shipped</h2>
+      <p class="section-intro">Range, range, range.</p>
+      <div class="other-grid">
+        <article class="other-entry"><h3>Sprint Kit</h3><p>Real PM skills for middle schoolers. AI scaffolds task breakdown. Zero data collection.</p><a href="https://github.com/earlgreyhot1701D/Sprint-Kit" target="_blank" rel="noreferrer">github →</a></article>
+        <article class="other-entry"><h3>Le Petit Mot</h3><p>A petit French learning app, built in a weekend.</p><a href="https://github.com/earlgreyhot1701D/petit-mot" target="_blank" rel="noreferrer">github →</a></article>
+        <article class="other-entry"><h3>Steep</h3><p>Your repo's fortune, steeped in truth. Tea leaf reading for code. Deterministic symbols, AI narration.</p><a href="https://github.com/earlgreyhot1701D/steep" target="_blank" rel="noreferrer">github →</a></article>
+      </div>
+    </section>
+
+    <section id="wins" class="movement" aria-labelledby="wins-title">
+      <p class="section-marker">§ 07</p>
+      <h2 id="wins-title" class="section-headline">Wins</h2>
+      <p class="section-intro">Five wins in nine months. One pattern.</p>
+      <div class="wins-list" role="list" aria-label="Selected wins">
+        <div class="win-row" role="listitem"><span class="win-year">2026</span><span class="win-result">Winner</span><span class="win-name">DEV Community 2026 WeCoded Challenge</span></div>
+        <div class="win-row" role="listitem"><span class="win-year">2026</span><span class="win-result">Winner</span><span class="win-name">DEV Community April Fools Best Use of Google AI</span></div>
+        <div class="win-row" role="listitem"><span class="win-year">2026</span><span class="win-result">Semi finalist</span><span class="win-name">AWS 10,000 AIdeas Competition</span></div>
+        <div class="win-row" role="listitem"><span class="win-year">2026</span><span class="win-result">Accepted</span><span class="win-name">NACM 2026 Workshop, Building Bridges</span></div>
+        <div class="win-row" role="listitem"><span class="win-year">2026</span><span class="win-result">4th of 250</span><span class="win-name">AI Vibe Coding Hackathon</span></div>
+        <div class="win-row" role="listitem"><span class="win-year">2025</span><span class="win-result">Winner</span><span class="win-name">DoraHacks AWS Hackathon, Draper University scholarship</span></div>
+        <div class="win-row" role="listitem"><span class="win-year">2025</span><span class="win-result">2nd of 14</span><span class="win-name">AWS CCC AI Summer Camp, selected 1 of 100 from 1,300 applicants</span></div>
+      </div>
+      <blockquote class="pull-quote">
+        Every winning build does the same structural thing.<br>
+        Takes something invisible and makes it inspectable.
+      </blockquote>
+    </section>
+
+    <section id="contact" class="movement" aria-labelledby="contact-title">
+      <p class="section-marker">§ 08</p>
+      <h2 id="contact-title" class="section-headline">Writing &amp; Contact</h2>
+      <div class="final-grid">
+        <div class="paper-panel">
+          <h3>Writing</h3>
+          <p>Long form essays at <a href="https://theforumfiles.substack.com" target="_blank" rel="noreferrer">The Forum Files</a> on Substack. Building notes, hackathon writeups, and reflections on AI assisted development at <a href="https://dev.to/earlgreyhot1701d" target="_blank" rel="noreferrer">dev.to/earlgreyhot1701d</a>.</p>
+        </div>
+        <div class="paper-panel">
+          <h3>Contact</h3>
+          <p>Open to conversations with builders, civic tech folks, and anyone working on the gap between AI agents and humans.</p>
+          <ul class="contact-links">
+            <li><a href="mailto:lasharac@gmail.com">Email →</a></li>
+            <li><a href="https://www.linkedin.com/in/la-shara-cordero-a0017a11/" target="_blank" rel="noreferrer">LinkedIn →</a></li>
+            <li><a href="https://github.com/earlgreyhot1701D" target="_blank" rel="noreferrer">GitHub →</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">© 2026 L. Cordero · Santa Barbara, CA</p>
+    <p class="attribution">AI assisted. Human approved. Powered by NLP.</p>
+  </footer>
+</body>
+</html>
