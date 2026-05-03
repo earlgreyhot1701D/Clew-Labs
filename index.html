@@ -155,6 +155,29 @@
       outline-offset: 3px;
     }
 
+    .skip-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-120%);
+      z-index: 1000;
+      margin: 0.5rem;
+      padding: 0.6rem 1rem;
+      background: var(--paper);
+      color: var(--charcoal);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: 2px solid var(--sienna);
+      transition: transform 0.15s ease;
+    }
+
+    .skip-link:focus-visible {
+      transform: translateY(0);
+      outline-offset: 0;
+    }
+
     img,
     svg {
       display: block;
@@ -723,6 +746,41 @@
       margin-top: 1.2rem;
     }
 
+    .clew-link-inactive {
+      color: var(--paper-warm);
+      opacity: 0.55;
+      font-style: italic;
+      cursor: default;
+      border-bottom-color: transparent;
+    }
+
+    .clew-link-inactive::after {
+      content: "";
+    }
+
+    .civic-meta {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--turquoise);
+      margin: 0 0 0.5rem;
+    }
+
+    .other-entry-winner {
+      border-left: 3px solid var(--sienna);
+      padding-left: 1.5rem;
+    }
+
+    .other-meta {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--sienna);
+      margin: 0 0 0.5rem;
+    }
+
     .civic-panel {
       max-width: 860px;
     }
@@ -1013,6 +1071,7 @@
   </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <div class="field-rails" aria-hidden="true">
     <span class="field-rail left"></span>
     <span class="field-rail right"></span>
@@ -1031,7 +1090,7 @@
     </ul>
   </nav>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section id="identity" class="hero" aria-labelledby="identity-title">
       <div class="hero-grid">
         <div class="hero-text">
@@ -1063,7 +1122,7 @@
       <h2 id="story-title" class="section-headline">Story</h2>
       <div class="story-layout">
         <div class="paper-panel story-panel">
-          <p class="drop-cap">I manage courtroom operations at Santa Barbara Superior Court. Ten years in courts, watching systems work, fail, and get blamed on the wrong thing. I started building AI tools in July 2025. I have not stopped.</p>
+          <p class="drop-cap">I started building AI tools in July 2025. I committed to one rule: ship in public against external deadlines. Seventeen hackathons in nine months. Five wins. Multiple ecosystems learned in real time. The volume is the practice.</p>
           <p>The work is not weekend tutorials. It is deployed products solving real problems: developer growth tracked from actual code, reasoning preserved across fast moving AI builds, agent readiness scanning for the web's next audience, IT support transparency for people who deserve to know what is happening with their tickets.</p>
           <p>I do not write code from scratch. I provide creative direction and validation. I work with AI tools, compare their outputs, choose the best pieces, and stitch them together into something that works. The AI generates. I direct. The output is mine. That is a deliberate workflow, not a limitation.</p>
         </div>
@@ -1161,7 +1220,7 @@
             <p class="clew-description">Agent readiness scanning for the web's next audience. Paste a URL or upload an OpenAPI spec. Get a unified report on what AI agents experience when they try to use your product. Frontend and API. Six categories each. Findings only, no fix suggestions. Methodology fully transparent and published.</p>
             <p class="clew-tech"><span>AWS Lambda</span><span>Bedrock</span><span>Claude Haiku 4.5</span><span>DynamoDB</span><span>React</span><span>TypeScript</span></p>
             <p class="clew-meta">Currently building. Launching with Code with Claude Extended, May 2026.</p>
-            <a href="https://agentislux.io" class="clew-link" target="_blank" rel="noreferrer">Read more at agentislux.io →</a>
+            <p class="clew-link clew-link-inactive" aria-disabled="true">Site coming soon</p>
           </div>
         </article>
 
@@ -1172,7 +1231,7 @@
             <div class="rule-line" aria-hidden="true"></div>
             <p class="clew-description">You have shipped three projects in three months. You are definitely better, but can you prove it? Janus reads your actual code, measures complexity objectively, and exports proof you can share. Not vibes. Not self reporting. Evidence.</p>
             <p class="clew-tech"><span>Python</span><span>FastAPI</span><span>React</span><span>AWS AgentCore</span></p>
-            <p class="clew-meta">AWS Global Vibe Hackathon 2025 Winner</p>
+            <p class="clew-meta">Built for DoraHacks AWS Global Vibe Hackathon 2025. Winner.</p>
             <a href="https://github.com/earlgreyhot1701D/janus-clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/janus-clew →</a>
           </div>
         </article>
@@ -1184,6 +1243,7 @@
             <div class="rule-line" aria-hidden="true"></div>
             <p class="clew-description">You build fast. You iterate messy. You lose track of why you made choices. Ariadne turns chaotic LLM chat sessions into structured clarity, capturing the aha moments, design tradeoffs, and code decisions that disappear when you move too fast for version control. Works with Claude, ChatGPT, DeepSeek, whatever you use.</p>
             <p class="clew-tech"><span>Python</span><span>Claude</span><span>AWS Bedrock</span></p>
+            <p class="clew-meta">Built for AWS AI Agent Global Hackathon 2026.</p>
             <a href="https://github.com/earlgreyhot1701D/Ariadne-Clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/Ariadne-Clew →</a>
           </div>
         </article>
@@ -1195,7 +1255,7 @@
             <div class="rule-line" aria-hidden="true"></div>
             <p class="clew-description">You save a link while debugging a feature. Later, the link is still there, but the reason you saved it is gone. The context evaporates. Bookmarks do not remember why. Memoria does. Local first research memory that resurfaces what you saved when it becomes relevant again, with transparent reasoning. No black box magic.</p>
             <p class="clew-tech"><span>TypeScript</span><span>Firebase</span><span>Claude</span></p>
-            <p class="clew-meta">AI Vibe Coding Hackathon 2026, 4th place out of 250</p>
+            <p class="clew-meta">Built for AI Vibe Coding Hackathon 2026. Winner: Featherless.ai 1st Place + ElevenLabs Best Project. 4th of 250.</p>
             <a href="https://github.com/earlgreyhot1701D/memoria-clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/memoria-clew →</a>
           </div>
         </article>
@@ -1207,6 +1267,7 @@
             <div class="rule-line" aria-hidden="true"></div>
             <p class="clew-description">When you are learning to code, you hit this wall: the code does not feel clear. You paste snippets into AI tools and get long paragraphs that do not match what you are actually trying to understand. Metis shows you what it does, how it works, and why it was built that way. Validated through user research with career switchers. MVP shipped in 5 weeks.</p>
             <p class="clew-tech"><span>TypeScript</span><span>Supabase</span><span>Claude</span></p>
+            <p class="clew-meta">Built during AI Scouts Cohort 2025. MVP shipped in 5 weeks.</p>
             <a href="https://metis-clew.vercel.app" class="clew-link" target="_blank" rel="noreferrer">metis-clew.vercel.app →</a>
           </div>
         </article>
@@ -1218,6 +1279,7 @@
             <div class="rule-line" aria-hidden="true"></div>
             <p class="clew-description">Most code feedback comes with judgment baked in. Lumen does not do that. Paste any public GitHub repo URL and get insights across code quality, dependency health, secret detection, and accessibility. Claude translates findings into plain English. Awareness, not shame. Reflection, not prescription.</p>
             <p class="clew-tech"><span>TypeScript</span><span>React</span><span>Claude</span></p>
+            <p class="clew-meta">Built for Lovable SheBuilds 2026.</p>
             <a href="https://lumenclew.lovable.app" class="clew-link" target="_blank" rel="noreferrer">lumenclew.lovable.app →</a>
           </div>
         </article>
@@ -1229,7 +1291,7 @@
             <div class="rule-line" aria-hidden="true"></div>
             <p class="clew-description">The web is about to get a second audience. AI agents cannot use most web apps. They cannot find buttons, fill forms, or navigate. They see a wall of styled divs and bounce. Hermes scans your HTML, JSX, and TSX files and tells you exactly what is broken. The proof of concept that became Perseus.</p>
             <p class="clew-tech"><span>Python</span><span>Claude</span><span>GitLab Duo</span></p>
-            <p class="clew-meta">GitLab Duo Agent Platform Challenge 2026</p>
+            <p class="clew-meta">Built for GitLab Duo Agent Platform Challenge 2026.</p>
             <a href="https://github.com/earlgreyhot1701D/hermes-clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/hermes-clew →</a>
           </div>
         </article>
@@ -1241,6 +1303,7 @@
             <div class="rule-line" aria-hidden="true"></div>
             <p class="clew-description">AI coding tools are powerful, but they are not inherently safe. Automation can modify sensitive files unintentionally, change configuration without context, and push large batches faster than meaningful human review can happen. Anton is a policy driven CLI that classifies file changes as DENY, NEEDS APPROVAL, or ALLOW before they land. Deterministic rules. No probabilistic guesses. No hallucinations.</p>
             <p class="clew-tech"><span>TypeScript</span><span>CLI</span></p>
+            <p class="clew-meta">Built for GitHub Copilot CLI Challenge 2026.</p>
             <a href="https://github.com/earlgreyhot1701D/anton-clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/anton-clew →</a>
           </div>
         </article>
@@ -1252,6 +1315,7 @@
             <div class="rule-line" aria-hidden="true"></div>
             <p class="clew-description">A tiny tool to keep your receipts. Audits your README against your code. Verifies every claim. Documentation is a contract, code is evidence, truth in sync.</p>
             <p class="clew-tech"><span>Node</span><span>CLI</span><span>Vitest</span></p>
+            <p class="clew-meta">Built for Replit Buildathon 2026.</p>
             <a href="https://github.com/earlgreyhot1701D/readme-clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/readme-clew →</a>
           </div>
         </article>
@@ -1263,7 +1327,7 @@
             <div class="rule-line" aria-hidden="true"></div>
             <p class="clew-description">IT support tickets are a black box. Customers do not know what is happening, why it is happening, or if the same issue will happen again next month. Real time visibility, AI powered explanations, smart solution tracking.</p>
             <p class="clew-tech"><span>Python</span><span>Claude</span><span>AWS Bedrock</span></p>
-            <p class="clew-meta">SuperHack 2025</p>
+            <p class="clew-meta">Built for SuperHack 2025.</p>
             <a href="https://github.com/earlgreyhot1701D/ticketglass" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/ticketglass →</a>
           </div>
         </article>
@@ -1275,6 +1339,7 @@
             <div class="rule-line" aria-hidden="true"></div>
             <p class="clew-description">AI education is overwhelming. Thousands of courses. Most behind paywalls. Few personalized. Four questions, a personalized learning path from verified free resources, a PDF you keep forever. No signup. No data stored. Multi agent system on AWS serverless. Free, private, accessible to all.</p>
             <p class="clew-tech"><span>Python</span><span>Next.js</span><span>AWS</span></p>
+            <p class="clew-meta">Built for AWS 10,000 AIdeas Competition 2026. Semi-Finalist.</p>
             <a href="https://clewdirective.com" class="clew-link" target="_blank" rel="noreferrer">clewdirective.com →</a>
           </div>
         </article>
@@ -1286,7 +1351,7 @@
             <div class="rule-line" aria-hidden="true"></div>
             <p class="clew-description">Autonomous debugging agent. Theseus uses deep thinking to analyze errors, search your debugging history, extract reusable principles, and resolve issues without you babysitting the process. Built on Gemini 3 for the Gemini Hackathon. Sometimes the best agent is one that finishes the work while you do something else.</p>
             <p class="clew-tech"><span>JavaScript</span><span>Gemini 3</span><span>Autonomous Agents</span></p>
-            <p class="clew-meta">Gemini 3 Hackathon submission</p>
+            <p class="clew-meta">Built for Devpost Gemini 3 Hackathon 2026.</p>
             <a href="https://github.com/earlgreyhot1701D/Athena-Clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/Athena-Clew →</a>
           </div>
         </article>
@@ -1298,6 +1363,7 @@
             <div class="rule-line" aria-hidden="true"></div>
             <p class="clew-description">Agent readiness review for AWS commits. Three copy paste prompts that help developers detect structural issues that make web apps hard for AI agents to interpret. Argus scans every commit via CodePipeline. Eyes everywhere, watching for what AI cannot read.</p>
             <p class="clew-tech"><span>AWS CodePipeline</span><span>Bedrock</span><span>Prompt Engineering</span></p>
+            <p class="clew-meta">Built for DoraHacks AI Agent Readiness Family for AWS 2026.</p>
             <a href="https://github.com/earlgreyhot1701D/argus-clew" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/argus-clew →</a>
           </div>
         </article>
@@ -1309,7 +1375,7 @@
             <div class="rule-line" aria-hidden="true"></div>
             <p class="clew-description">Intelligent open source project discovery powered by Algolia Agent Studio. Answer four questions about what you want to learn and your skill level. Get GitHub projects with AI generated explanations for why each one fits. Built for the Algolia Agent Studio Challenge.</p>
             <p class="clew-tech"><span>TypeScript</span><span>Algolia Agent Studio</span><span>GitHub API</span></p>
-            <p class="clew-meta">Algolia Agent Studio Challenge Completion</p>
+            <p class="clew-meta">Built for Algolia Agent Studio Challenge 2026.</p>
             <a href="https://github.com/earlgreyhot1701D/clew-quest" class="clew-link" target="_blank" rel="noreferrer">github.com/earlgreyhot1701D/clew-quest →</a>
           </div>
         </article>
@@ -1335,6 +1401,7 @@
         <hr class="entry-divider">
         <article class="civic-entry">
           <h3>Panoptes Scout</h3>
+          <p class="civic-meta">Built for Kaggle Agents Intensive Capstone 2025.</p>
           <p>First pass data quality briefing agent for tabular datasets. Google AI Agents capstone.</p>
           <a href="https://github.com/earlgreyhot1701D/Panoptes-Scout" target="_blank" rel="noreferrer">github →</a>
         </article>
@@ -1352,16 +1419,31 @@
       <h2 id="other-title" class="section-headline">Other things shipped</h2>
       <p class="section-intro">Range, range, range.</p>
       <div class="other-grid">
-        <article class="other-entry"><h3>Sprint Kit</h3><p>Real PM skills for middle schoolers. AI scaffolds task breakdown. Zero data collection.</p><a href="https://github.com/earlgreyhot1701D/Sprint-Kit" target="_blank" rel="noreferrer">github →</a></article>
-        <article class="other-entry"><h3>Le Petit Mot</h3><p>A petit French learning app, built in a weekend.</p><a href="https://github.com/earlgreyhot1701D/petit-mot" target="_blank" rel="noreferrer">github →</a></article>
-        <article class="other-entry"><h3>Steep</h3><p>Your repo's fortune, steeped in truth. Tea leaf reading for code. Deterministic symbols, AI narration.</p><a href="https://github.com/earlgreyhot1701D/steep" target="_blank" rel="noreferrer">github →</a></article>
+        <article class="other-entry other-entry-winner">
+          <h3>Steep</h3>
+          <p class="other-meta">Built for DEV Community April Fools 2026. Winner: Best Use of Google AI.</p>
+          <p>Your repo's fortune, steeped in truth. Tea leaf reading for code. Deterministic symbols, AI narration.</p>
+          <a href="https://github.com/earlgreyhot1701D/steep" target="_blank" rel="noreferrer">github →</a>
+        </article>
+        <article class="other-entry">
+          <h3>Sprint Kit</h3>
+          <p class="other-meta">Built for CS Girlies November Hackathon 2025: Make Learning Cool Again.</p>
+          <p>Real PM skills for middle schoolers. AI scaffolds task breakdown. Zero data collection.</p>
+          <a href="https://github.com/earlgreyhot1701D/Sprint-Kit" target="_blank" rel="noreferrer">github →</a>
+        </article>
+        <article class="other-entry">
+          <h3>Le Petit Mot</h3>
+          <p class="other-meta">Built as a personal learning tool for an upcoming trip to Paris.</p>
+          <p>A petit French learning app, built in a weekend.</p>
+          <a href="https://github.com/earlgreyhot1701D/petit-mot" target="_blank" rel="noreferrer">github →</a>
+        </article>
       </div>
     </section>
 
     <section id="wins" class="movement" aria-labelledby="wins-title">
       <p class="section-marker">§ 07</p>
       <h2 id="wins-title" class="section-headline">Wins</h2>
-      <p class="section-intro">Five wins in nine months. One pattern.</p>
+      <p class="section-intro">Five hackathon wins in nine months. One team, four solo. One writing, one comedy. Every winning build does the same structural thing: takes something invisible and makes it inspectable.</p>
       <div class="wins-list" role="list" aria-label="Selected wins">
         <div class="win-row" role="listitem"><span class="win-year">2026</span><span class="win-result">Winner</span><span class="win-name">DEV Community 2026 WeCoded Challenge</span></div>
         <div class="win-row" role="listitem"><span class="win-year">2026</span><span class="win-result">Winner</span><span class="win-name">DEV Community April Fools Best Use of Google AI</span></div>
