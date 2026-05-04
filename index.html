@@ -1483,5 +1483,23 @@
     <p class="attribution">© 2026 L. Cordero · Santa Barbara, CA</p>
     <p class="attribution">AI assisted. Human approved. Powered by NLP.</p>
   </footer>
+
+  <script>
+    (function () {
+      var ticking = false;
+      function clearHashAtTop() {
+        if (window.scrollY < 80 && window.location.hash) {
+          history.replaceState(null, "", window.location.pathname + window.location.search);
+        }
+        ticking = false;
+      }
+      window.addEventListener("scroll", function () {
+        if (!ticking) {
+          window.requestAnimationFrame(clearHashAtTop);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+  </script>
 </body>
 </html>
