@@ -60,6 +60,45 @@
   }
   </script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://earlgreyhot1701d.github.io/Clew-Labs/#org",
+        "name": "Clew Labs",
+        "url": "https://earlgreyhot1701d.github.io/Clew-Labs/",
+        "description": "Clew Labs is the editorial home for L. Cordero, an AI-assisted builder shipping a suite of open source developer tools for the agentic web.",
+        "founder": { "@type": "Person", "name": "L. Cordero" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "AgentisLux",
+        "url": "https://agentislux.io",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "description": "AgentisLux surfaces what AI agents experience when they try to use a website or API. Powered by the Perseus Clew engine, part of the Clew suite.",
+        "publisher": { "@id": "https://earlgreyhot1701d.github.io/Clew-Labs/#org" },
+        "sameAs": [
+          "https://github.com/earlgreyhot1701D/perseus-clew",
+          "https://youtu.be/bv56_XB1E_c"
+        ]
+      },
+      {
+        "@type": "VideoObject",
+        "name": "AgentisLux Demo",
+        "description": "A walkthrough of AgentisLux, an agent-readiness scanner that surfaces what AI agents experience when they try to use a website or API.",
+        "thumbnailUrl": "https://img.youtube.com/vi/bv56_XB1E_c/hqdefault.jpg",
+        "uploadDate": "2026-06-26",
+        "contentUrl": "https://youtu.be/bv56_XB1E_c",
+        "embedUrl": "https://www.youtube.com/embed/bv56_XB1E_c",
+        "publisher": { "@id": "https://earlgreyhot1701d.github.io/Clew-Labs/#org" }
+      }
+    ]
+  }
+  </script>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1223,8 +1262,12 @@
             <div class="rule-line" aria-hidden="true"></div>
             <p class="clew-description">Agent readiness scanning for the web's next audience. Paste a URL or upload an OpenAPI spec. Get a unified report on what AI agents experience when they try to use your product. Frontend and API. Six categories each. Findings only, no fix suggestions. Methodology fully transparent and published.</p>
             <p class="clew-tech"><span>AWS Lambda</span><span>Bedrock</span><span>Claude Haiku 4.5</span><span>DynamoDB</span><span>React</span><span>TypeScript</span><span>Vercel</span></p>
-            <p class="clew-meta">Currently building. Launching with H0: Hack the Zero Stack, June 2026.</p>
-            <p class="clew-link clew-link-inactive" aria-disabled="true">Site coming soon</p>
+            <p class="clew-meta">Launched with H0: Hack the Zero Stack, June 2026.</p>
+            <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.2rem;">
+              <a href="https://agentislux.io" class="clew-link" target="_blank" rel="noreferrer" style="margin-top: 0;">AgentisLux is live at agentislux.io</a>
+              <a href="https://youtu.be/bv56_XB1E_c" class="clew-link" target="_blank" rel="noreferrer" style="margin-top: 0;">Demo Video →</a>
+              <a href="https://github.com/earlgreyhot1701D/perseus-clew" class="clew-link" target="_blank" rel="noreferrer" style="margin-top: 0;">GitHub Repo →</a>
+            </div>
           </div>
         </article>
 
