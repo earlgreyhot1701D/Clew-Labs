@@ -1624,6 +1624,220 @@
       .contact-panel { grid-template-columns: 1fr; gap: 32px; }
       .contact-invitation-grid { grid-template-columns: 1fr; }
     }
+  /* Directed AI Systems Pipeline in About Section */
+    .systems-workflow-console {
+      margin-top: 24px;
+      padding: 18px 20px;
+      background: var(--field-deep);
+      border: 1px solid rgba(31, 181, 183, 0.25);
+      border-radius: 4px;
+      color: var(--paper);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+
+    .workflow-title-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid rgba(232, 224, 204, 0.12);
+      padding-bottom: 8px;
+      margin-bottom: 14px;
+      gap: 10px;
+    }
+
+    .workflow-label {
+      font-family: var(--mono);
+      font-size: .66rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--turquoise);
+    }
+
+    .workflow-subtitle {
+      font-size: .74rem;
+      color: rgba(232, 224, 204, 0.65);
+      font-style: italic;
+    }
+
+    .workflow-steps {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px 16px;
+    }
+
+    .workflow-step {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .step-num {
+      font-family: var(--mono);
+      font-size: .68rem;
+      font-weight: 700;
+      color: var(--sienna);
+      background: rgba(232, 90, 31, 0.12);
+      border: 1px solid rgba(232, 90, 31, 0.25);
+      padding: 2px 6px;
+      border-radius: 2px;
+      line-height: 1;
+      margin-top: 1px;
+    }
+
+    .step-body strong {
+      display: block;
+      font-family: var(--mono);
+      font-size: .74rem;
+      color: var(--paper);
+      margin-bottom: 2px;
+    }
+
+    .step-body p {
+      margin: 0 !important;
+      font-size: .75rem !important;
+      line-height: 1.35 !important;
+      color: rgba(232, 224, 204, 0.76) !important;
+    }
+
+    /* Upgraded Archive Styling */
+    details.archive {
+      margin-top: 36px;
+      border: 1px solid rgba(31, 181, 183, 0.25);
+      border-radius: 4px;
+      background: rgba(6, 23, 32, 0.85);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      overflow: hidden;
+      transition: border-color .2s ease;
+    }
+
+    details.archive[open] {
+      border-color: var(--turquoise);
+    }
+
+    details.archive summary {
+      padding: 16px 22px;
+      background: rgba(23, 38, 46, 0.6);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      font-family: var(--mono);
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--paper);
+      user-select: none;
+      transition: background .15s ease;
+    }
+
+    details.archive summary:hover {
+      background: rgba(31, 181, 183, 0.12);
+      color: var(--turquoise-soft);
+    }
+
+    .archive-summary-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .archive-count-pill {
+      font-family: var(--mono);
+      font-size: .62rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 12px;
+      background: rgba(31, 181, 183, 0.18);
+      color: var(--turquoise);
+      border: 1px solid rgba(31, 181, 183, 0.35);
+    }
+
+    .archive-filter-tags {
+      display: flex;
+      gap: 6px;
+      padding: 14px 22px 6px;
+      border-bottom: 1px solid rgba(232, 224, 204, 0.08);
+      flex-wrap: wrap;
+    }
+
+    .filter-tag {
+      font-family: var(--mono);
+      font-size: .6rem;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 2px;
+      background: rgba(232, 224, 204, 0.05);
+      color: rgba(232, 224, 204, 0.7);
+      border: 1px solid rgba(232, 224, 204, 0.1);
+    }
+
+    .archive-grid {
+      padding: 18px 22px 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px;
+    }
+
+    .archive-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 12px;
+      background: rgba(232, 224, 204, 0.03);
+      border: 1px solid rgba(232, 224, 204, 0.08);
+      border-radius: 3px;
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+    }
+
+    .archive-item:hover {
+      transform: translateY(-2px);
+      background: rgba(31, 181, 183, 0.06);
+      border-color: rgba(31, 181, 183, 0.35);
+    }
+
+    .archive-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 4px;
+      overflow: hidden;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .archive-mark svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .archive-content a {
+      font-family: var(--display);
+      font-size: .88rem;
+      font-weight: 700;
+      color: var(--paper);
+      text-decoration: none;
+      letter-spacing: .03em;
+      transition: color .15s ease;
+    }
+
+    .archive-content a:hover {
+      color: var(--turquoise);
+      text-decoration: underline;
+    }
+
+    .archive-content p {
+      margin: 3px 0 0;
+      font-size: .76rem;
+      line-height: 1.35;
+      color: rgba(232, 224, 204, 0.68);
+    }
   </style>
 </head>
 
@@ -1990,6 +2204,43 @@
               <p>NACM workshop presenter, technical writing, and civic AI architecture pilots.</p>
             </div>
           </div>
+
+          <div class="systems-workflow-console" aria-label="Directed AI Systems Pipeline">
+            <div class="workflow-title-bar">
+              <span class="workflow-label">Directed AI Systems Pipeline</span>
+              <span class="workflow-subtitle">Statutory boundary ➔ Working audit bundle</span>
+            </div>
+            <div class="workflow-steps">
+              <div class="workflow-step">
+                <span class="step-num">01</span>
+                <div class="step-body">
+                  <strong>Statutory Boundary</strong>
+                  <p>Define operational authority, evidentiary requirements, and declared unknowns first.</p>
+                </div>
+              </div>
+              <div class="workflow-step">
+                <span class="step-num">02</span>
+                <div class="step-body">
+                  <strong>Deterministic Logic</strong>
+                  <p>Encode scoring registries, least-privilege RBAC, and schemas before inviting models.</p>
+                </div>
+              </div>
+              <div class="workflow-step">
+                <span class="step-num">03</span>
+                <div class="step-body">
+                  <strong>Bounded Synthesis</strong>
+                  <p>Models locate and extract evidence within strict prompt contracts and verified tools.</p>
+                </div>
+              </div>
+              <div class="workflow-step">
+                <span class="step-num">04</span>
+                <div class="step-body">
+                  <strong>Human Falsification</strong>
+                  <p>Adversarial edge tests, negative controls, and recomputable audit bundles for sign-off.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </article>
 
         <aside class="proof-panel" aria-label="Selected evidence">
@@ -2049,31 +2300,44 @@
       </div>
 
       <details class="archive">
-        <summary>Open the project archive <span>Range remains part of the record</span></summary>
+        <summary>
+          <div class="archive-summary-left">
+            <span>Systems Archive & Laboratory Record</span>
+            <span class="archive-count-pill">25 Shipped Projects</span>
+          </div>
+          <span style="color: var(--turquoise-soft); font-size: .72rem;">Explore full repository index +</span>
+        </summary>
+        <div class="archive-filter-tags">
+          <span class="filter-tag">Civic & Judicial Tech</span>
+          <span class="filter-tag">Agent Governance</span>
+          <span class="filter-tag">Deterministic Audits</span>
+          <span class="filter-tag">Multi-Agent AWS</span>
+          <span class="filter-tag">Plain-Language Engines</span>
+        </div>
                 <div class="archive-grid">
           <article class="archive-item">
-            <div class="archive-mark">PL</div>
+            <div class="archive-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="4" fill="#17262E"/><path d="M16 6l6 5H10l6-5z" fill="#E85A1F"/><path d="M11 11h10v12H11z" fill="#243842" stroke="#E85A1F" stroke-width="1.5"/><circle cx="16" cy="17" r="3" fill="#F1E8D2"/><path d="M16 14v6M13 17h6" stroke="#1FB5B7" stroke-width="1.2"/></svg></div>
             <div class="archive-content">
               <a href="https://github.com/earlgreyhot1701D/porch-light" target="_blank" rel="noreferrer">Porch Light</a>
               <p>Weekly plain-language synthesis of Ventura city agendas with receipts on every claim.</p>
             </div>
           </article>
           <article class="archive-item">
-            <div class="archive-mark">CC</div>
+            <div class="archive-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="4" fill="#0A1F2E"/><path d="M16 7v18M10 12h12M10 12l-3 6h6l-3-6zM22 12l-3 6h6l-3-6z" stroke="#1FB5B7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
             <div class="archive-content">
               <a href="https://charitas-clew.web.app/" target="_blank" rel="noreferrer">Charitas Clew</a>
               <p>Public rights engine deconstructing bureaucratic notices with Gemini Flash, backed by an honest post-sprint security audit.</p>
             </div>
           </article>
           <article class="archive-item">
-            <div class="archive-mark">NT</div>
+            <div class="archive-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="4" fill="#17262E"/><circle cx="16" cy="11" r="3" fill="#E85A1F"/><circle cx="10" cy="22" r="3" fill="#1FB5B7"/><circle cx="22" cy="22" r="3" fill="#81D8D5"/><path d="M16 14v4M16 18l-4 2M16 18l4 2" stroke="#F1E8D2" stroke-width="1.5" stroke-linecap="round"/></svg></div>
             <div class="archive-content">
               <a href="https://github.com/earlgreyhot1701D/nova-trivium" target="_blank" rel="noreferrer">Nova Trivium</a>
               <p>Amazon Bedrock AgentCore triage router directing queries across DynamoDB tools, FAQs, and human handoff.</p>
             </div>
           </article>
           <article class="archive-item">
-            <div class="archive-mark">SM</div>
+            <div class="archive-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="4" fill="#0A1F2E"/><path d="M9 13h12v7a6 6 0 01-12 0v-7z" fill="#243842" stroke="#E85A1F" stroke-width="1.5"/><path d="M21 15h2a2 2 0 010 4h-2" stroke="#E85A1F" stroke-width="1.5"/><path d="M7 24h18" stroke="#F1E8D2" stroke-width="1.5" stroke-linecap="round"/></svg></div>
             <div class="archive-content">
               <a href="https://github.com/earlgreyhot1701D/sobremesa" target="_blank" rel="noreferrer">Sobremesa</a>
               <p>DEV Frontend Challenge entry with WCAG AA computed contrast and zero runtime dependencies.</p>
@@ -2177,35 +2441,35 @@
             </div>
           </article>
                     <article class="archive-item">
-            <div class="archive-mark">WA</div>
+            <div class="archive-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="4" fill="#17262E"/><path d="M10 7h8l5 5v13H10V7z" fill="#243842" stroke="#1FB5B7" stroke-width="1.5"/><path d="M18 7v5h5" stroke="#1FB5B7" stroke-width="1.2"/><circle cx="16" cy="18" r="2.5" fill="#E85A1F"/></svg></div>
             <div class="archive-content">
               <a href="https://github.com/earlgreyhot1701D/write-of-access" target="_blank" rel="noreferrer">Write of Access</a>
               <p>Document extraction tested against public court forms.</p>
             </div>
           </article>
                     <article class="archive-item">
-            <div class="archive-mark">HJ</div>
+            <div class="archive-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="4" fill="#0A1F2E"/><path d="M9 12l6-6 4 4-6 6z" fill="#E85A1F"/><path d="M16 15l7 7M8 23h8" stroke="#F1E8D2" stroke-width="1.5" stroke-linecap="round"/></svg></div>
             <div class="archive-content">
               <a href="https://github.com/earlgreyhot1701D/hung-jury" target="_blank" rel="noreferrer">Hung Jury</a>
               <p>A finding that identified data quality as the blocker.</p>
             </div>
           </article>
                     <article class="archive-item">
-            <div class="archive-mark">PS</div>
+            <div class="archive-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="4" fill="#17262E"/><circle cx="16" cy="16" r="8" stroke="#1FB5B7" stroke-width="1.5"/><circle cx="16" cy="16" r="4" fill="#E85A1F"/><circle cx="16" cy="16" r="1.5" fill="#FFFFFF"/></svg></div>
             <div class="archive-content">
               <a href="https://github.com/earlgreyhot1701D/Panoptes-Scout" target="_blank" rel="noreferrer">Panoptes Scout</a>
               <p>First pass data quality briefing for tabular data.</p>
             </div>
           </article>
                     <article class="archive-item">
-            <div class="archive-mark">PA</div>
+            <div class="archive-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="4" fill="#0A1F2E"/><path d="M16 6l8 3v6c0 5-4 9-8 11-4-2-8-6-8-11V9l8-3z" fill="#243842" stroke="#E85A1F" stroke-width="1.5"/><path d="M12 14h8M16 11v6" stroke="#1FB5B7" stroke-width="1.2"/></svg></div>
             <div class="archive-content">
               <a href="https://github.com/earlgreyhot1701D/permission-to-approach-the-firewall" target="_blank" rel="noreferrer">Permission to Approach the Firewall</a>
               <p>Cybersecurity awareness for court staff.</p>
             </div>
           </article>
                     <article class="archive-item">
-            <div class="archive-mark">ST</div>
+            <div class="archive-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="4" fill="#17262E"/><path d="M14 7h4v4l4 8a3 3 0 01-3 4H13a3 3 0 01-3-4l4-8V7z" fill="#243842" stroke="#1FB5B7" stroke-width="1.5"/><path d="M12 18c2-2 6-2 8 0" stroke="#E85A1F" stroke-width="1.5"/></svg></div>
             <div class="archive-content">
               <a href="https://github.com/earlgreyhot1701D/steep" target="_blank" rel="noreferrer">Steep</a>
               <p>Tea leaf reading for code, steeped in evidence.</p>
@@ -2219,7 +2483,7 @@
             </div>
           </article>
                     <article class="archive-item">
-            <div class="archive-mark">OT</div>
+            <div class="archive-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="4" fill="#0A1F2E"/><path d="M16 11v14M16 11a5 5 0 015-5M16 11a5 5 0 00-5-5M16 17a9 9 0 018-8M16 17a9 9 0 00-8-8" stroke="#1FB5B7" stroke-width="1.5" stroke-linecap="round"/><circle cx="16" cy="11" r="2" fill="#E85A1F"/></svg></div>
             <div class="archive-content">
               <a href="on-tenterhooks/" target="_blank" rel="noreferrer">On Tenterhooks</a>
               <p>A proposed pair of homemade Meshtastic radios.</p>
