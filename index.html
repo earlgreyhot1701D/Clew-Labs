@@ -1838,6 +1838,212 @@
       line-height: 1.35;
       color: rgba(232, 224, 204, 0.68);
     }
+
+    /* Mobile Responsiveness for Section 04 (About & Systems Archive) */
+    .about-grid,
+    .paper-panel,
+    .proof-panel,
+    .systems-workflow-console,
+    details.archive {
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    .about-grid > * {
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .practice-matrix {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      /* Provenance timeline: convert to vertical responsive list on mobile */
+      .provenance-strip {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 14px 16px;
+        overflow: visible;
+      }
+
+      .provenance-arrow {
+        display: none;
+      }
+
+      .provenance-node {
+        width: 100%;
+        border-left: 2px solid var(--turquoise);
+        padding-left: 10px;
+      }
+
+      .provenance-node.current {
+        border-left-color: var(--sienna);
+      }
+
+      .provenance-label {
+        white-space: normal !important;
+        font-size: .8rem;
+        line-height: 1.35;
+      }
+
+      .provenance-year {
+        font-size: .64rem;
+      }
+
+      /* Paper & Proof Panels */
+      .paper-panel {
+        padding: 22px 18px !important;
+      }
+
+      .paper-panel h3 {
+        font-size: 1.65rem;
+        margin-bottom: 18px;
+        word-break: break-word;
+      }
+
+      .court-ethos-quote {
+        margin: 18px 0;
+        padding: 12px 14px;
+      }
+
+      .court-ethos-quote p {
+        font-size: .94rem !important;
+        line-height: 1.5;
+      }
+
+      .court-ethos-quote cite {
+        font-size: .74rem !important;
+        display: block;
+        margin-top: 8px;
+        line-height: 1.4;
+      }
+
+      .proof-panel {
+        padding: 22px 18px !important;
+      }
+
+      .proof-panel h3 {
+        font-size: 1.45rem;
+        margin-bottom: 18px;
+      }
+
+      .proof-header {
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .proof-tag {
+        font-size: .56rem;
+      }
+
+      .proof-list dd {
+        font-size: .86rem;
+        line-height: 1.45;
+      }
+
+      /* Directed AI Systems Pipeline Console */
+      .systems-workflow-console {
+        margin-top: 20px;
+        padding: 14px 14px;
+      }
+
+      .workflow-title-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin-bottom: 12px;
+      }
+
+      .workflow-label {
+        font-size: .66rem;
+      }
+
+      .workflow-subtitle {
+        font-size: .7rem;
+      }
+
+      .workflow-steps {
+        grid-template-columns: 1fr !important;
+        gap: 10px;
+      }
+
+      .workflow-step {
+        gap: 10px;
+      }
+
+      .step-num {
+        font-size: .64rem;
+        padding: 2px 5px;
+      }
+
+      .step-body strong {
+        font-size: .72rem;
+      }
+
+      .step-body p {
+        font-size: .74rem !important;
+      }
+
+      /* Systems Archive Details */
+      details.archive {
+        margin-top: 24px;
+      }
+
+      details.archive summary {
+        padding: 14px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .archive-summary-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+
+      .archive-filter-tags {
+        padding: 10px 14px 6px;
+        gap: 6px;
+      }
+
+      .filter-tag {
+        font-size: .58rem;
+        padding: 2px 6px;
+      }
+
+      .archive-grid {
+        grid-template-columns: 1fr !important;
+        padding: 12px 14px 18px !important;
+        gap: 10px;
+      }
+
+      .archive-item {
+        padding: 10px 12px;
+        gap: 10px;
+      }
+
+      .archive-mark {
+        width: 32px;
+        height: 32px;
+      }
+
+      .archive-content a {
+        font-size: .84rem;
+      }
+
+      .archive-content p {
+        font-size: .73rem;
+      }
+    }
   </style>
 </head>
 
