@@ -28,7 +28,7 @@ User-agent: CCBot
 Allow: /
 
 # Discovery standards
-Sitemap: https://earlgreyhot1701d.github.io/Clew-Labs/sitemap.xml
+Sitemap: https://clewlabs.org/sitemap.xml
 
 # LLM Discovery Standard (https://llmstxt.org/)
-# llms.txt: https://earlgreyhot1701d.github.io/Clew-Labs/llms.txt
+# llms.txt: https://clewlabs.org/llms.txt

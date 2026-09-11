@@ -3,10 +3,10 @@
 > **Auditable AI for Complex Public Systems**  
 > The independent practice and open-source portfolio of **La Shara Cordero**.
 
-[![Portfolio](https://img.shields.io/badge/Live_Portfolio-earlgreyhot1701d.github.io%2FClew--Labs-1FB5B7?style=flat-square)](https://earlgreyhot1701d.github.io/Clew-Labs/)
-[![Resume](https://img.shields.io/badge/Executive_Resume-One--Sheet_(PDF)-E85A1F?style=flat-square)](https://earlgreyhot1701d.github.io/Clew-Labs/resume.html)
-[![AI Context](https://img.shields.io/badge/LLM_Context-llms.txt-0E6264?style=flat-square)](https://earlgreyhot1701d.github.io/Clew-Labs/llms.txt)
-[![Court Operations](https://img.shields.io/badge/Court_Operations-2015--Present-17262E?style=flat-square)](https://earlgreyhot1701d.github.io/Clew-Labs/#about)
+[![Portfolio](https://img.shields.io/badge/Live_Portfolio-clewlabs.org-1FB5B7?style=flat-square)](https://clewlabs.org/)
+[![Resume](https://img.shields.io/badge/Executive_Resume-One--Sheet_(PDF)-E85A1F?style=flat-square)](https://clewlabs.org/resume.html)
+[![AI Context](https://img.shields.io/badge/LLM_Context-llms.txt-0E6264?style=flat-square)](https://clewlabs.org/llms.txt)
+[![Court Operations](https://img.shields.io/badge/Court_Operations-2015--Present-17262E?style=flat-square)](https://clewlabs.org/#about)
 
 ---
 
@@ -97,11 +97,11 @@ Role-based AI readiness self-check for California judicial staff. Evaluates spec
 This repository hosts the public web home of Clew Labs:
 
 * **Pure Vanilla Architecture:** Single-file HTML5, CSS3 tokens, and lightweight vanilla JS. Zero runtime dependencies, no build steps, instant page load.
-* **Executive One-Sheet ([`resume.html`](https://earlgreyhot1701d.github.io/Clew-Labs/resume.html)):** On-brand single-page executive brief with calibrated `@media print` rules for clean 1-page PDF export.
+* **Executive One-Sheet ([`resume.html`](https://clewlabs.org/resume.html)):** On-brand single-page executive brief with calibrated `@media print` rules for clean 1-page PDF export.
 * **AI & Search Discoverability:**
-  * [`llms.txt`](https://earlgreyhot1701d.github.io/Clew-Labs/llms.txt) — Token-efficient context for frontier LLM answer engines (Perplexity, ChatGPT, Claude).
-  * [`robots.txt`](https://earlgreyhot1701d.github.io/Clew-Labs/robots.txt) — Explicit policy welcoming AI research crawlers while disallowing scrapers.
-  * [`sitemap.xml`](https://earlgreyhot1701d.github.io/Clew-Labs/sitemap.xml) — Validated search index.
+  * [`llms.txt`](https://clewlabs.org/llms.txt) — Token-efficient context for frontier LLM answer engines (Perplexity, ChatGPT, Claude).
+  * [`robots.txt`](https://clewlabs.org/robots.txt) — Explicit policy welcoming AI research crawlers while disallowing scrapers.
+  * [`sitemap.xml`](https://clewlabs.org/sitemap.xml) — Validated search index.
   * Schema.org JSON-LD — Semantic knowledge graph registering `Person`, `Organization`, and `SoftwareApplication` entities.
 
 ### Running Locally
@@ -122,8 +122,8 @@ Open `http://localhost:8080` in your browser.
 
 Open to public sector AI product roles, civic technology collaborations, responsible AI pilots, and speaking engagements:
 
-* **Live Portfolio:** [earlgreyhot1701d.github.io/Clew-Labs](https://earlgreyhot1701d.github.io/Clew-Labs/)
-* **Executive Resume:** [earlgreyhot1701d.github.io/Clew-Labs/resume.html](https://earlgreyhot1701d.github.io/Clew-Labs/resume.html)
+* **Live Portfolio:** [clewlabs.org](https://clewlabs.org/)
+* **Executive Resume:** [clewlabs.org/resume.html](https://clewlabs.org/resume.html)
 * **LinkedIn:** [linkedin.com/in/la-shara-cordero](https://www.linkedin.com/in/la-shara-cordero-a0017a11/)
 * **DEV Community:** [dev.to/earlgreyhot1701d](https://dev.to/earlgreyhot1701d)
 * **GitHub:** [github.com/earlgreyhot1701D](https://github.com/earlgreyhot1701D)
