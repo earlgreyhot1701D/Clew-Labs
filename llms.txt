@@ -1,0 +1,49 @@
+# Clew Labs
+
+> Auditable AI systems, civic intelligence, and governance harnesses designed by La Shara Cordero.
+
+Clew Labs is the independent civic technology and applied AI practice of La Shara Cordero, a court operations leader with over 10 years of public systems experience (2015–present). Clew Labs tests high-stakes AI questions through working, open-source software with deterministic boundaries, reproducible audit logs, and clear human authority.
+
+## Executive Brief & Resume
+- [One-Page Executive Resume & Systems Brief](https://earlgreyhot1701d.github.io/Clew-Labs/resume.html): Complete one-page overview of background, systems shipped, speaking, and operating ethos.
+
+## Core Operating Principles
+- **Evidence before conclusion**: Consequential claims remain tied to primary records. Retrieval and inference are strictly separated.
+- **Structure before intelligence**: Boundaries, deterministic calculations, and failure modes precede model invocation.
+- **Human authority remains visible**: AI extracts, triages, and explains. AI never quietly acquires the power to decide.
+
+## Flagship Systems
+- [Verity Lex](https://verity-lex.vercel.app): A cited public record readiness surface for California superior courts. Bounded agent extracts evidence; deterministic registry calculates results.
+- [Verity Lex Methods](https://verity-lex.vercel.app/methods): Formal documentation on deterministic scoring registries versus model hallucinations.
+- [Agentis Lux](https://agentislux.io): A scanner and 50-site benchmark showing developers what retrieval agents experience when parsing websites.
+- [Heimdall](https://github.com/earlgreyhot1701D/heimdall): Reproducible least-privilege test harness of RBAC at an AI gateway (Bifrost), featuring falsification controls and append-only audit logs.
+- [Clew Directive](https://clewdirective.com): Stateless, privacy-first personalized learning path generator using verified free resources on AWS Bedrock & Amplify.
+- [Themis Lex](https://themislex.org): Role-based AI readiness guidance for judicial staff evaluating workflow sensitivity.
+- [Porch Light](https://github.com/earlgreyhot1701D/porch-light): Weekly plain-language synthesis of Ventura city agendas with receipts on every claim.
+- [Charitas Clew](https://charitas-clew.web.app): Mobile-first public rights engine deconstructing bureaucratic notices with Gemini Flash, backed by an honest post-sprint security audit.
+
+## Key Technical Writing & Field Notes
+- [Open AI Build Week: Foundation First, Software Second](https://dev.to/earlgreyhot1701d/open-ai-build-week-3fi8): Companion field note for Verity Lex on why foundation comes before software in government AI systems.
+- [I built it twice. Didn't place twice. Then Google and Vercel shipped it.](https://dev.to/earlgreyhot1701d/i-built-it-twice-didnt-place-twice-then-google-and-vercel-shipped-it-ldd): Companion field note for Agentis Lux on the web's second audience (autonomous AI agents).
+- [Scoping Permissions with RBAC and Data Access Control at the AI Gateway](https://dev.to/earlgreyhot1701d/gating-access-with-bifrost-nine-calls-three-refusals-one-trap-46h4): Sponsored deep-dive evaluating gateway access control, model tiering, and falsification controls.
+- [AIdeas: Clew Directive — Free AI Learning Navigator](https://builder.aws.com/content/39mEGMF2RFcE1Yt3xZ97TKFz4Xs/aideas-clew-directive-free-ai-learning-navigator-or-stop-following-the-hype-start-directing-the-search): AWS 10,000 AIdeas project essay on multi-agent curriculum synthesis and direct search on AWS.
+- [Build Club Week Four: The Part of Themis Lex I Never Explained](https://dev.to/earlgreyhot1701d/build-club-week-four-the-part-of-themis-lex-i-never-explained-20i6): Companion retrospective for Themis Lex explaining why court staff need role-based AI readiness self-checks.
+- [My Agents Never Get Tired. I Do: On Satisficing](https://dev.to/earlgreyhot1701d/my-agents-never-get-tired-i-do-on-satisficing-1mb): DEV Community Favorite Gem on verification bottlenecks in autonomous coding.
+- [Netlify’s Hot AR Summer: 33 apps later, here’s the bill](https://dev.to/earlgreyhot1701d/netlifys-hot-ar-summer-i-wasnt-going-to-enter-33-apps-later-heres-the-bill-1d25): Post-mortem on building 33 deterministic single-file applications in 31 days (awarded Most Prolific and Most Consistent).
+- [Do You Work Here?](https://dev.to/earlgreyhot1701d/do-you-work-here-i-flew-to-albuquerque-to-speak-at-a-national-ai-conference-someone-asked-if-i-3inj): Reflection on speaking at the National Association for Court Management (NACM 2026).
+
+## Verified Credentials & Recognitions
+- **National Conference**: Presenter at the National Association for Court Management (NACM 2026) on frontline court AI capacity ([Presentation Slides](https://docs.google.com/presentation/d/1leFoGAr5DqgRPHX4RibSG--09FMBSyhY/edit?usp=sharing)).
+- **Netlify Build Challenge**: Dual winner for Most Prolific (33 apps) and Most Consistent (26 build days) in Netlify Hot AR Summer (250+ projects).
+- **DEV Community**: Featured in Top 7 Posts of the Week ("must-reads") and 2× Community Favorite Gem Awards.
+- **AI Vibe Coding Hackathon**: 4th place out of 250 builders (Top 1.6%).
+- **AWS**: AWS 10,000 AIdeas semifinalist & California Community Colleges AI Summer Camp selection.
+- **Google / Community**: DEV Community WeCoded winner & Best Use of Google AI winner.
+
+## Contact & Links
+- Executive Resume: https://earlgreyhot1701d.github.io/Clew-Labs/resume.html
+- GitHub: https://github.com/earlgreyhot1701D
+- DEV.to: https://dev.to/earlgreyhot1701d
+- LinkedIn: https://www.linkedin.com/in/la-shara-cordero-a0017a11/
+- Email: lasharac@gmail.com
+- Website: https://earlgreyhot1701d.github.io/Clew-Labs/

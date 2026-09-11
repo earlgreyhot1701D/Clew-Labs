@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Shara Cordero | Executive Resume & Systems Brief</title>
+  <meta name="description" content="One-page executive brief and technical resume for La Shara Cordero — Civic technologist, AI systems builder, and court operations leader." />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --field: #0A1F2E;
+      --field-deep: #061720;
+      --paper: #F8F5EE;
+      --paper-card: #FFFFFF;
+      --ink: #17262E;
+      --ink-subtle: #455660;
+      --muted: #647178;
+      --turquoise: #1FB5B7;
+      --turquoise-deep: #0E6264;
+      --sienna: #E85A1F;
+      --line: rgba(23, 38, 46, 0.14);
+      --font-display: "Cinzel", Georgia, serif;
+      --font-body: "Source Serif 4", Georgia, serif;
+      --font-mono: "JetBrains Mono", monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--field-deep);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 13px;
+      line-height: 1.42;
+      padding: 30px 16px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Screen-only floating action bar */
+    .screen-actions {
+      width: 100%;
+      max-width: 8.5in;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 0 4px;
+    }
+
+    .back-link {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--turquoise);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.15s ease;
+    }
+
+    .back-link:hover {
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+
+    .print-btn {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      background: var(--turquoise);
+      color: var(--field-deep);
+      border: none;
+      padding: 9px 18px;
+      border-radius: 3px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      transition: transform 0.15s ease, filter 0.15s ease;
+      box-shadow: 0 4px 14px rgba(31, 181, 183, 0.35);
+    }
+
+    .print-btn:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.1);
+    }
+
+    /* The Resume Sheet Container */
+    .sheet {
+      width: 100%;
+      max-width: 8.5in;
+      min-height: 11in;
+      background: var(--paper);
+      padding: 0.42in 0.46in;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Top Brand Bar */
+    .brand-top-bar {
+      height: 4px;
+      background: linear-gradient(90deg, var(--turquoise) 0%, var(--sienna) 100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 1.5px solid var(--line);
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+
+    .header-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .candidate-name {
+      font-family: var(--font-display);
+      font-size: 1.72rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--field);
+      line-height: 1.1;
+    }
+
+    .candidate-title {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--turquoise-deep);
+      margin-top: 3px;
+    }
+
+    .candidate-provenance {
+      font-size: 0.82rem;
+      color: var(--ink-subtle);
+      margin-top: 2px;
+      font-style: italic;
+    }
+
+    .header-contact {
+      text-align: right;
+      font-family: var(--font-mono);
+      font-size: 0.67rem;
+      line-height: 1.55;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1px;
+      white-space: nowrap;
+    }
+
+    .contact-item {
+      color: var(--field);
+      text-decoration: none;
+    }
+
+    .contact-item:hover {
+      color: var(--sienna);
+      text-decoration: underline;
+    }
+
+    /* Ethos Strip */
+    .ethos-strip {
+      background: rgba(31, 181, 183, 0.08);
+      border-left: 3px solid var(--turquoise);
+      padding: 6px 10px;
+      margin-bottom: 11px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .ethos-text {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--field);
+      text-transform: uppercase;
+    }
+
+    .ethos-sub {
+      font-size: 0.74rem;
+      color: var(--ink-subtle);
+      font-style: italic;
+    }
+
+    /* Section Headings */
+    .sec-title {
+      font-family: var(--font-display);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--field);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+      padding-bottom: 2px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .sec-num {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--sienna);
+      font-weight: 600;
+    }
+
+    /* Systems Grid */
+    .systems-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px 12px;
+      margin-bottom: 11px;
+    }
+
+    .system-item {
+      background: rgba(255, 255, 255, 0.65);
+      border: 1px solid var(--line);
+      border-left: 2.5px solid var(--field);
+      padding: 6px 9px;
+      border-radius: 2px;
+    }
+
+    .system-item.featured {
+      border-left-color: var(--turquoise);
+    }
+
+    .sys-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .sys-name {
+      font-family: var(--font-display);
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--field);
+      text-decoration: none;
+    }
+
+    .sys-name:hover {
+      text-decoration: underline;
+      color: var(--turquoise-deep);
+    }
+
+    .sys-badge {
+      font-family: var(--font-mono);
+      font-size: 0.56rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--sienna);
+    }
+
+    .sys-desc {
+      font-size: 0.75rem;
+      line-height: 1.35;
+      color: var(--ink);
+      margin-bottom: 3px;
+    }
+
+    .sys-specs {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+
+    .sys-specs strong {
+      color: var(--field);
+      font-weight: 600;
+    }
+
+    /* Dual Column Section: Experience & Credentials */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 14px;
+      margin-bottom: 11px;
+    }
+
+    .exp-item {
+      margin-bottom: 8px;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .exp-role {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--field);
+    }
+
+    .exp-date {
+      font-family: var(--font-mono);
+      font-size: 0.64rem;
+      font-weight: 600;
+      color: var(--turquoise-deep);
+    }
+
+    .exp-bullets {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .exp-bullets li {
+      position: relative;
+      padding-left: 11px;
+      font-size: 0.74rem;
+      line-height: 1.38;
+      color: var(--ink);
+      margin-bottom: 3px;
+    }
+
+    .exp-bullets li::before {
+      content: "▪";
+      position: absolute;
+      left: 0;
+      color: var(--sienna);
+      font-size: 0.65rem;
+      top: 0px;
+    }
+
+    /* Proof List */
+    .proof-entry {
+      margin-bottom: 6px;
+      font-size: 0.73rem;
+      line-height: 1.34;
+    }
+
+    .proof-label {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--field);
+      display: inline-block;
+      margin-right: 4px;
+    }
+
+    .proof-link {
+      color: var(--turquoise-deep);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .proof-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Core Competencies Matrix */
+    .skills-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      border-top: 1px solid var(--line);
+      padding-top: 8px;
+    }
+
+    .skill-col h4 {
+      font-family: var(--font-mono);
+      font-size: 0.64rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--field);
+      margin-bottom: 3px;
+    }
+
+    .skill-col p {
+      font-size: 0.71rem;
+      line-height: 1.3;
+      color: var(--ink-subtle);
+    }
+
+    /* Footer Note */
+    .sheet-footer {
+      border-top: 1px solid var(--line);
+      padding-top: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* Print Overrides: Perfect 1-Page Letter Output */
+    @media print {
+      body {
+        background: #FFFFFF !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      .screen-actions {
+        display: none !important;
+      }
+
+      .sheet {
+        box-shadow: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: auto !important;
+        padding: 0.36in 0.42in !important;
+        background: #FFFFFF !important;
+      }
+
+      @page {
+        size: letter portrait;
+        margin: 0;
+      }
+
+      a {
+        color: var(--field) !important;
+        text-decoration: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Actions Bar -->
+  <aside class="screen-actions" aria-label="Resume Page Actions">
+    <a href="index.html" class="back-link">← Return to Clew Labs</a>
+    <button class="print-btn" onclick="window.print()">
+      <span>🖨️ Print / Save as PDF</span>
+    </button>
+  </aside>
+
+  <!-- Single-Page Brief Sheet -->
+  <main class="sheet" id="resume">
+    <div class="brand-top-bar" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header>
+      <div class="header-main">
+        <div>
+          <h1 class="candidate-name">La Shara Cordero</h1>
+          <p class="candidate-title">Civic Technologist · Applied AI Systems Builder · Product Leader</p>
+          <p class="candidate-provenance">10+ Years California Court & Government Operations (2015–Present)</p>
+        </div>
+        <div class="header-contact">
+          <a href="https://earlgreyhot1701d.github.io/Clew-Labs" class="contact-item"><strong>earlgreyhot1701d.github.io/Clew-Labs</strong></a>
+          <a href="mailto:lasharac@gmail.com" class="contact-item">lasharac@gmail.com</a>
+          <a href="https://www.linkedin.com/in/la-shara-cordero-a0017a11/" target="_blank" rel="noreferrer" class="contact-item">linkedin.com/in/la-shara-cordero</a>
+          <a href="https://github.com/earlgreyhot1701D" target="_blank" rel="noreferrer" class="contact-item">github.com/earlgreyhot1701D</a>
+          <a href="https://dev.to/earlgreyhot1701d" target="_blank" rel="noreferrer" class="contact-item">dev.to/earlgreyhot1701d</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Ethos -->
+    <div class="ethos-strip">
+      <span class="ethos-text">Operating Ethos: Evidence before conclusion · Structure before intelligence · Human authority remains visible</span>
+      <span class="ethos-sub">California, USA</span>
+    </div>
+
+    <!-- Systems Shipped (2-column grid) -->
+    <section aria-labelledby="systems-title">
+      <h2 class="sec-title" id="systems-title"><span class="sec-num">§ 01</span> Signature Systems Shipped & Open Source Repositories</h2>
+      
+      <div class="systems-grid">
+        <article class="system-item featured">
+          <div class="sys-head">
+            <a href="https://verity-lex.vercel.app" target="_blank" rel="noreferrer" class="sys-name">Verity Lex</a>
+            <span class="sys-badge">Flagship Civic AI</span>
+          </div>
+          <p class="sys-desc">Cited public record readiness surface for California courts. Bounded agent locates and extracts evidence; deterministic registry computes the result. Every claim inspectable.</p>
+          <p class="sys-specs"><strong>Stack:</strong> Next.js, GPT 5.6, Tavily, TypeScript deterministic engine, published methods, audit bundle.</p>
+        </article>
+
+        <article class="system-item featured">
+          <div class="sys-head">
+            <a href="https://agentislux.io" target="_blank" rel="noreferrer" class="sys-name">Agentis Lux</a>
+            <span class="sys-badge">Developer Tooling</span>
+          </div>
+          <p class="sys-desc">Scanner & 50-site benchmark making the "second audience" visible: what autonomous retrieval bots encounter when parsing latency, permissions, and structure across the modern web.</p>
+          <p class="sys-specs"><strong>Stack:</strong> AWS Lambda, Amazon Bedrock, DynamoDB, Vercel, deterministic parser benchmark.</p>
+        </article>
+
+        <article class="system-item">
+          <div class="sys-head">
+            <a href="https://github.com/earlgreyhot1701D/heimdall" target="_blank" rel="noreferrer" class="sys-name">Heimdall</a>
+            <span class="sys-badge">Sponsored Evaluation</span>
+          </div>
+          <p class="sys-desc">Least-privilege RBAC test harness for AI gateways (Bifrost). 3 scoped roles across 3 model tiers, 9 calls, negative control, and falsification test tracing to an append-only audit log.</p>
+          <p class="sys-specs"><strong>Stack:</strong> Bifrost Gateway, Python test harness, RBAC policy suite, immutable audit trail.</p>
+        </article>
+
+        <article class="system-item">
+          <div class="sys-head">
+            <a href="https://clewdirective.com" target="_blank" rel="noreferrer" class="sys-name">Clew Directive</a>
+            <span class="sys-badge">AWS Semifinalist</span>
+          </div>
+          <p class="sys-desc">Stateless, privacy-focused tool synthesizing personalized curricula through verified free resources. Multi-agent Scout + Navigator + Curator pattern with zero retained personal data.</p>
+          <p class="sys-specs"><strong>Stack:</strong> AWS Amplify, Amazon Nova, AWS Lambda, S3, TypeScript CDK, Next.js.</p>
+        </article>
+
+        <article class="system-item" style="grid-column: span 2;">
+          <div class="sys-head">
+            <a href="https://themislex.org" target="_blank" rel="noreferrer" class="sys-name">Themis Lex</a>
+            <span class="sys-badge">Judicial Alignment</span>
+          </div>
+          <p class="sys-desc">Role-based AI readiness guidance for California judicial staff. Evaluates specific court workflows against statutory sensitivity guidelines to preserve human authority where required. Stack: Claude Haiku, AWS Bedrock, server-side PDF generator.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Two Column: Operational Leadership + Verified Evidence -->
+    <div class="two-col">
+      <!-- Left: Public Operations Experience -->
+      <section aria-labelledby="exp-title">
+        <h2 class="sec-title" id="exp-title"><span class="sec-num">§ 02</span> Court Operations Leadership & Public Administration</h2>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role">Court Operations & Public Administration Leader</span>
+            <span class="exp-date">2015 – Present</span>
+          </div>
+          <p style="font-size: 0.72rem; color: var(--muted); margin-bottom: 4px; font-style: italic;">California Judicial & Municipal Systems</p>
+          <ul class="exp-bullets">
+            <li>Direct frontline courtroom operations, record integrity, and statutory workflows across complex California public systems.</li>
+            <li>Enforce evidentiary boundaries, data custody, and jurisdictional constraints where failure carries legal and civic consequence.</li>
+            <li>Pioneered frontline court AI capacity initiatives, evaluating practical feasibility, access control risks, and workforce impact before deploying software.</li>
+            <li>Architected 40+ deterministic tools, audit suites, and prototypes (2025–present) translating judicial operational judgment into working software.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Right: Verified Evidence & Speaking -->
+      <section aria-labelledby="proof-title">
+        <h2 class="sec-title" id="proof-title"><span class="sec-num">§ 03</span> Honors & Verified Industry Proof</h2>
+
+        <div class="proof-entry">
+          <span class="proof-label">National Conference:</span>
+          Presenter at the <strong>National Association for Court Management (NACM 2026)</strong> on frontline court AI capacity (<a href="https://docs.google.com/presentation/d/1leFoGAr5DqgRPHX4RibSG--09FMBSyhY/edit?usp=sharing" target="_blank" rel="noreferrer" class="proof-link">Presentation Deck</a>).
+        </div>
+
+        <div class="proof-entry">
+          <span class="proof-label">Netlify Challenge:</span>
+          <strong>Dual Winner</strong> for <em>Most Prolific</em> (33 deterministic applications) and <em>Most Consistent</em> (26 build days) in Netlify Hot AR Summer (250+ entries).
+        </div>
+
+        <div class="proof-entry">
+          <span class="proof-label">DEV Editorial:</span>
+          Featured in DEV’s <strong>Top 7 Posts of the Week</strong> + 2× Community Favorite Gem Awards (<a href="https://dev.to/earlgreyhot1701d/my-agents-never-get-tired-i-do-on-satisficing-1mb" target="_blank" rel="noreferrer" class="proof-link">Satisficing</a> & <a href="https://dev.to/earlgreyhot1701d/block-zero-oh-no-claude-kiro-and-i-over-engineered-the-throwaway-5d42" target="_blank" rel="noreferrer" class="proof-link">Block Zero</a>).
+        </div>
+
+        <div class="proof-entry">
+          <span class="proof-label">Hackathon:</span>
+          <strong>Top 1.6%</strong> (4th of 250 builders) in the 2026 AI Vibe Coding Hackathon.
+        </div>
+
+        <div class="proof-entry">
+          <span class="proof-label">AWS Builder:</span>
+          <a href="https://builder.aws.com/content/39mEGMF2RFcE1Yt3xZ97TKFz4Xs/aideas-clew-directive-free-ai-learning-navigator-or-stop-following-the-hype-start-directing-the-search" target="_blank" rel="noreferrer" class="proof-link">AWS 10,000 AIdeas Semifinalist</a> & California Community Colleges AI Camp selection.
+        </div>
+      </section>
+    </div>
+
+    <!-- Bottom Competencies -->
+    <section aria-labelledby="skills-title">
+      <h2 class="sec-title" id="skills-title"><span class="sec-num">§ 04</span> Technical Practice & Practice Domains</h2>
+      <div class="skills-strip">
+        <div class="skill-col">
+          <h4>Civic & Judicial AI</h4>
+          <p>Readiness intelligence, deterministic registries, evidentiary custody, boundary enforcement, and court staff capacity.</p>
+        </div>
+        <div class="skill-col">
+          <h4>Governance & Gateway Controls</h4>
+          <p>AI Gateway RBAC (Bifrost), least-privilege scoping, falsification testing, append-only logs, and retrieval benchmark audits.</p>
+        </div>
+        <div class="skill-col">
+          <h4>Architecture & Infrastructure</h4>
+          <p>TypeScript, Next.js, AWS (Lambda, Bedrock, Amplify, DynamoDB, CDK), Python test harnesses, Gemini Flash, Claude Haiku.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="sheet-footer">
+      <span>Clew Labs · Independent Practice · La Shara Cordero</span>
+      <span>Published at earlgreyhot1701d.github.io/Clew-Labs/resume.html · Updated September 2026</span>
+    </footer>
+  </main>
+
+</body>
+</html>
