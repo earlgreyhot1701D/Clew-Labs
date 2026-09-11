@@ -44,9 +44,9 @@ Rather than critiquing AI from a distance, I decided to learn by doing. I began 
 
 ---
 
-## Signature Systems Shipped
+## Signature Systems Built
 
-Every project at Clew Labs pairs **working code**, **live deployment**, and a **first-person technical field note**:
+Every project at Clew Labs pairs **working code**, an **interactive prototype**, and a **first-person technical field note**:
 
 ### 🏛️ [Verity Lex](https://verity-lex.vercel.app) · *Readiness Intelligence for Superior Courts*
 A cited public record readiness surface for California courts. A bounded agent locates and extracts evidence; a deterministic scoring registry computes the result. Every claim traces to an immutable audit bundle with declared unknowns.

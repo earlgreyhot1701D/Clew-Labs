@@ -5,7 +5,7 @@
 Clew Labs is the independent civic technology and applied AI practice of La Shara Cordero, a court operations leader with over 10 years of public systems experience (2015–present). Clew Labs tests high-stakes AI questions through working, open-source software with deterministic boundaries, reproducible audit logs, and clear human authority.
 
 ## Executive Brief & Resume
-- [One-Page Executive Resume & Systems Brief](https://clewlabs.org/resume.html): Complete one-page overview of background, systems shipped, speaking, and operating ethos.
+- [One-Page Executive Resume & Systems Brief](https://clewlabs.org/resume.html): Complete one-page overview of background, systems built, speaking, and operating ethos.
 
 ## Core Operating Principles
 - **Evidence before conclusion**: Consequential claims remain tied to primary records. Retrieval and inference are strictly separated.
