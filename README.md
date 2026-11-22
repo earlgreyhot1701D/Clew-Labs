@@ -104,6 +104,16 @@ This repository hosts the public web home of Clew Labs:
   * [`sitemap.xml`](https://clewlabs.org/sitemap.xml): Validated search index.
   * Schema.org JSON-LD: Semantic knowledge graph registering `Person`, `Organization`, and `SoftwareApplication` entities.
 
+### Latest Field Note (automated)
+
+The Writing section has three cards. The first two are pinned by hand. The third shows the newest dev.to post that isn't already pinned.
+
+* **What runs:** [`.github/workflows/latest-note.yml`](.github/workflows/latest-note.yml), once a day and on demand from the Actions tab.
+* **What it does:** [`.github/scripts/update-latest-note.mjs`](.github/scripts/update-latest-note.mjs) reads the dev.to API and rewrites only the card between the `latest-note:start` and `latest-note:end` markers in `index.html`. Deterministic, no AI, no dependencies.
+* **What it never does:** merge on its own, open a pull request when nothing changed, or touch any other part of the site.
+* **To change a pinned post:** edit the first two cards in `index.html` by hand. The script treats any card outside the markers as pinned.
+* **Test locally:** `FEED_FIXTURE=path/to/posts.json node .github/scripts/update-latest-note.mjs`
+
 ### Running Locally
 
 ```bash
