@@ -7,7 +7,9 @@
       --paper: #F1E8D2;
       --paper-warm: #E8E0CC;
       --ink: #17262E;
-      --muted: #647178;
+      --muted: #4F5B62;
+      --sienna-deep: #9A3C17;
+      --teal-deep: #0E6C6E;
       --line-dark: rgba(232, 224, 204, 0.17);
       --line-paper: rgba(23, 38, 46, 0.18);
       --max: 1180px;
@@ -129,7 +131,7 @@
     .site-nav li a {
       color: rgba(232,224,204,.8);
       font-family: var(--mono);
-      font-size: .7rem;
+      font-size: .75rem;
       letter-spacing: .12em;
       text-decoration: none;
       text-transform: uppercase;
@@ -168,7 +170,7 @@
     .section-kicker {
       margin: 0 0 18px;
       color: var(--turquoise);
-      font-size: .76rem;
+      font-size: .78rem;
     }
 
     h1,
@@ -223,7 +225,7 @@
       color: var(--field-deep);
       background: var(--turquoise);
       font-family: var(--mono);
-      font-size: .74rem;
+      font-size: .78rem;
       font-weight: 600;
       letter-spacing: .1em;
       text-decoration: none;
@@ -281,8 +283,8 @@
       margin-top: 15px;
       color: var(--ink);
       font-family: var(--mono);
-      font-size: .68rem;
-      letter-spacing: .08em;
+      font-size: .72rem;
+      letter-spacing: .04em;
       text-transform: uppercase;
     }
 
@@ -310,7 +312,7 @@
 
     .evidence-label {
       color: var(--sienna);
-      font-size: .65rem;
+      font-size: .75rem;
     }
 
     .evidence-value {
@@ -409,7 +411,7 @@
     .project-type {
       margin: 0 0 15px;
       color: #9A3C17;
-      font-size: .68rem;
+      font-size: .75rem;
       font-weight: 600;
     }
 
@@ -439,7 +441,7 @@
       border-top: 1px solid var(--line-paper);
       color: var(--muted);
       font-family: var(--mono);
-      font-size: .7rem;
+      font-size: .75rem;
       letter-spacing: .06em;
       line-height: 1.55;
       text-transform: uppercase;
@@ -455,7 +457,7 @@
     .text-link {
       color: var(--ink);
       font-family: var(--mono);
-      font-size: .72rem;
+      font-size: .78rem;
       font-weight: 600;
       letter-spacing: .08em;
       text-decoration-color: var(--sienna);
@@ -522,7 +524,7 @@
       margin-bottom: 36px;
       color: var(--sienna);
       font-family: var(--mono);
-      font-size: .75rem;
+      font-size: .78rem;
       letter-spacing: .14em;
     }
 
@@ -589,7 +591,7 @@
 
     .essay .micro {
       color: #9A3C17;
-      font-size: .64rem;
+      font-size: .75rem;
       font-weight: 600;
       letter-spacing: .08em;
       text-transform: uppercase;
@@ -598,7 +600,7 @@
 
     .essay-badge {
       font-family: var(--mono);
-      font-size: .6rem;
+      font-size: .75rem;
       color: var(--muted);
       letter-spacing: .06em;
     }
@@ -650,7 +652,7 @@
       align-items: center;
       margin-bottom: 4px;
       font-family: var(--mono);
-      font-size: .56rem;
+      font-size: .75rem;
       letter-spacing: .12em;
       color: var(--turquoise);
       text-transform: uppercase;
@@ -689,7 +691,7 @@
     .feed-text {
       color: rgba(232,224,204,.84);
       font-family: var(--mono);
-      font-size: .72rem;
+      font-size: .78rem;
       line-height: 1.48;
       margin: 0;
       padding-bottom: 12px;
@@ -703,10 +705,10 @@
       padding-top: 10px;
       border-top: 1px solid var(--line-paper);
       font-family: var(--mono);
-      font-size: .68rem;
+      font-size: .75rem;
       font-weight: 600;
       letter-spacing: .08em;
-      color: var(--sienna);
+      color: var(--sienna-deep);
       text-transform: uppercase;
     }
 
@@ -721,7 +723,7 @@
 
     .about-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 1fr);
       gap: 26px;
     }
 
@@ -767,7 +769,7 @@
     .proof-list dt {
       color: #9A3C17;
       font-family: var(--mono);
-      font-size: .68rem;
+      font-size: .75rem;
       letter-spacing: .1em;
       text-transform: uppercase;
     }
@@ -796,7 +798,7 @@
 
     details.archive summary span {
       font-family: var(--mono);
-      font-size: 0.68rem;
+      font-size: .75rem;
       color: var(--muted);
       text-transform: none;
       font-weight: 400;
@@ -891,7 +893,7 @@
       padding-block: 34px;
       color: rgba(232,224,204,.58);
       font-family: var(--mono);
-      font-size: .66rem;
+      font-size: .75rem;
       letter-spacing: .08em;
       text-transform: uppercase;
     }
@@ -943,7 +945,7 @@
       body { font-size: 1rem; }
       .site-nav { align-items: flex-start; padding: 14px 20px; }
       .site-nav ul { max-width: 230px; gap: 6px 14px; }
-      .site-nav li a { font-size: .62rem; }
+      .site-nav li a { font-size: .75rem; }
       .wrap { width: min(calc(100% - 30px), var(--max)); }
       .hero { padding-block: 70px; }
       .evidence-grid { grid-template-columns: 1fr; }
@@ -988,7 +990,7 @@
 
     .companion-label {
       font-family: var(--mono);
-      font-size: .62rem;
+      font-size: .75rem;
       letter-spacing: .1em;
       text-transform: uppercase;
       color: #9A3C17;
@@ -1046,9 +1048,9 @@
 
     .provenance-year {
       font-family: var(--mono);
-      font-size: .62rem;
+      font-size: .75rem;
       font-weight: 700;
-      color: var(--sienna);
+      color: var(--sienna-deep);
       letter-spacing: .08em;
     }
 
@@ -1063,7 +1065,7 @@
     .provenance-arrow {
       color: var(--muted);
       font-family: var(--mono);
-      font-size: .72rem;
+      font-size: .78rem;
     }
 
     .court-ethos-quote {
@@ -1088,7 +1090,7 @@
       display: block;
       margin-top: 8px;
       font-family: var(--mono);
-      font-size: .65rem;
+      font-size: .75rem;
       font-style: normal;
       letter-spacing: .06em;
       text-transform: uppercase;
@@ -1106,7 +1108,7 @@
       padding: 2px 7px;
       border-radius: 2px;
       font-family: var(--mono);
-      font-size: .56rem;
+      font-size: .75rem;
       font-weight: 600;
       letter-spacing: .08em;
       text-transform: uppercase;
@@ -1174,7 +1176,7 @@
     }
 
     .provenance-node.current .provenance-year {
-      color: var(--sienna);
+      color: var(--sienna-deep);
       display: flex;
       align-items: center;
       gap: 5px;
@@ -1219,7 +1221,7 @@
     .practice-box h4 {
       margin: 0 0 4px;
       font-family: var(--mono);
-      font-size: .64rem;
+      font-size: .75rem;
       letter-spacing: .08em;
       text-transform: uppercase;
       color: #9A3C17;
@@ -1251,7 +1253,7 @@
     .proof-sublink {
       color: #0E6264;
       font-family: var(--mono);
-      font-size: .72rem;
+      font-size: .78rem;
       text-decoration: underline;
       text-underline-offset: 2px;
       transition: color .15s ease;
@@ -1316,7 +1318,7 @@
 
     .card-badge {
       font-family: var(--mono);
-      font-size: .58rem;
+      font-size: .75rem;
       font-weight: 600;
       letter-spacing: .1em;
       text-transform: uppercase;
@@ -1345,7 +1347,7 @@
       border: 1px solid rgba(31,181,183,.2);
       border-radius: 3px;
       font-family: var(--mono);
-      font-size: .66rem;
+      font-size: .75rem;
       display: flex;
       flex-direction: column;
       gap: 5px;
@@ -1362,7 +1364,7 @@
       color: var(--sienna);
       font-weight: 600;
       letter-spacing: .06em;
-      font-size: .6rem;
+      font-size: .75rem;
       text-transform: uppercase;
       flex-shrink: 0;
     }
@@ -1398,7 +1400,7 @@
       border: 1px solid rgba(31, 181, 183, 0.35);
       border-radius: 20px;
       font-family: var(--mono);
-      font-size: .62rem;
+      font-size: .75rem;
       font-weight: 600;
       letter-spacing: .08em;
       color: #0E6264;
@@ -1429,7 +1431,7 @@
       background: rgba(23, 38, 46, 0.05);
       border-radius: 3px;
       font-family: var(--mono);
-      font-size: .66rem;
+      font-size: .75rem;
       color: var(--ink);
       font-weight: 500;
       letter-spacing: .02em;
@@ -1471,7 +1473,7 @@
       background: var(--turquoise);
       color: var(--field-deep);
       font-family: var(--mono);
-      font-size: .76rem;
+      font-size: .78rem;
       font-weight: 700;
       letter-spacing: .08em;
       text-transform: uppercase;
@@ -1489,7 +1491,7 @@
       display: block;
       text-align: center;
       font-family: var(--mono);
-      font-size: .72rem;
+      font-size: .78rem;
       color: var(--turquoise-soft);
       text-decoration: none;
     }
@@ -1509,7 +1511,7 @@
 
     .contact-channel-link {
       font-family: var(--mono);
-      font-size: .68rem;
+      font-size: .75rem;
       letter-spacing: .08em;
       color: rgba(232, 224, 204, 0.75);
       text-decoration: none;
@@ -1548,7 +1550,7 @@
 
     .workflow-label {
       font-family: var(--mono);
-      font-size: .66rem;
+      font-size: .75rem;
       font-weight: 700;
       letter-spacing: .08em;
       text-transform: uppercase;
@@ -1556,7 +1558,7 @@
     }
 
     .workflow-subtitle {
-      font-size: .74rem;
+      font-size: .78rem;
       color: rgba(232, 224, 204, 0.65);
       font-style: italic;
     }
@@ -1575,7 +1577,7 @@
 
     .step-num {
       font-family: var(--mono);
-      font-size: .68rem;
+      font-size: .75rem;
       font-weight: 700;
       color: var(--sienna);
       background: rgba(232, 90, 31, 0.12);
@@ -1589,14 +1591,14 @@
     .step-body strong {
       display: block;
       font-family: var(--mono);
-      font-size: .74rem;
+      font-size: .78rem;
       color: var(--paper);
       margin-bottom: 2px;
     }
 
     .step-body p {
       margin: 0 !important;
-      font-size: .75rem !important;
+      font-size: .78rem !important;
       line-height: 1.35 !important;
       color: rgba(232, 224, 204, 0.76) !important;
     }
@@ -1647,7 +1649,7 @@
 
     .archive-count-pill {
       font-family: var(--mono);
-      font-size: .62rem;
+      font-size: .75rem;
       font-weight: 700;
       padding: 3px 8px;
       border-radius: 12px;
@@ -1666,7 +1668,7 @@
 
     .filter-tag {
       font-family: var(--mono);
-      font-size: .6rem;
+      font-size: .75rem;
       letter-spacing: .04em;
       text-transform: uppercase;
       padding: 3px 8px;
@@ -1735,7 +1737,7 @@
 
     .archive-content p {
       margin: 3px 0 0;
-      font-size: .76rem;
+      font-size: .78rem;
       line-height: 1.35;
       color: rgba(232, 224, 204, 0.68);
     }
@@ -1796,7 +1798,7 @@
       }
 
       .provenance-year {
-        font-size: .64rem;
+        font-size: .75rem;
       }
 
       /* Paper & Proof Panels */
@@ -1821,7 +1823,7 @@
       }
 
       .court-ethos-quote cite {
-        font-size: .74rem !important;
+        font-size: .78rem !important;
         display: block;
         margin-top: 8px;
         line-height: 1.4;
@@ -1842,7 +1844,7 @@
       }
 
       .proof-tag {
-        font-size: .56rem;
+        font-size: .75rem;
       }
 
       .proof-list dd {
@@ -1864,11 +1866,11 @@
       }
 
       .workflow-label {
-        font-size: .66rem;
+        font-size: .75rem;
       }
 
       .workflow-subtitle {
-        font-size: .7rem;
+        font-size: .75rem;
       }
 
       .workflow-steps {
@@ -1881,16 +1883,16 @@
       }
 
       .step-num {
-        font-size: .64rem;
+        font-size: .75rem;
         padding: 2px 5px;
       }
 
       .step-body strong {
-        font-size: .72rem;
+        font-size: .78rem;
       }
 
       .step-body p {
-        font-size: .74rem !important;
+        font-size: .78rem !important;
       }
 
       /* Systems Archive Details */
@@ -1917,7 +1919,7 @@
       }
 
       .filter-tag {
-        font-size: .58rem;
+        font-size: .75rem;
         padding: 2px 6px;
       }
 
@@ -1942,6 +1944,34 @@
       }
 
       .archive-content p {
-        font-size: .73rem;
+        font-size: .78rem;
       }
     }
+
+    /* Contrast: teal kicker on the paper contact panel */
+    .contact-panel .section-kicker { color: var(--teal-deep); }
+
+    /* Proportion: align the three project cards row by row (kicker, title, copy, specs, links, note) */
+    @media (min-width: 981px) {
+      @supports (grid-template-rows: subgrid) {
+        .project-grid .project-card {
+          display: grid;
+          grid-template-rows: subgrid;
+          grid-row: span 7;
+          row-gap: 0;
+          min-height: 0;
+          align-content: start;
+        }
+      }
+    }
+
+    /* Proportion: let timeline labels wrap inside the narrower About column instead of clipping */
+    .provenance-strip .provenance-node { min-width: 0; flex: 1 1 0; }
+    .provenance-strip .provenance-label { white-space: normal; }
+    .provenance-strip .provenance-arrow { flex: 0 0 auto; }
+
+    /* Proportion: writing cards. Stack the kicker and date so neither wraps mid-phrase,
+       and pin the summary box and footer to the bottom so they line up across cards. */
+    .essay { justify-content: flex-start; }
+    .essay .essay-meta { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .essay .feed-container { margin-top: auto; }
