@@ -1975,3 +1975,12 @@
     .essay { justify-content: flex-start; }
     .essay .essay-meta { flex-direction: column; align-items: flex-start; gap: 4px; }
     .essay .feed-container { margin-top: auto; }
+
+    /* Ticker: give the label strip a solid background so scrolling text
+       passes underneath it instead of showing through. */
+    .feed-container .feed-bar {
+      margin: -8px -12px 4px;
+      padding: 8px 12px 4px;
+      background: var(--field-deep);
+      box-shadow: 0 8px 8px -2px var(--field-deep);
+    }
