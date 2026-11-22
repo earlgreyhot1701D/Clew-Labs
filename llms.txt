@@ -2,7 +2,7 @@
 
 > Auditable AI systems, civic intelligence, and governance harnesses designed by La Shara Cordero.
 
-Clew Labs is the independent civic technology and applied AI practice of La Shara Cordero, a court operations leader with over 10 years of public systems experience (2015–present). Clew Labs tests high-stakes AI questions through working, open-source software with deterministic boundaries, reproducible audit logs, and clear human authority.
+Clew Labs is the independent civic technology and applied AI practice of La Shara Cordero, a court operations leader with 11 years of public systems experience (2015–present). Clew Labs tests high-stakes AI questions through working, open-source software with deterministic boundaries, reproducible audit logs, and clear human authority.
 
 ## Executive Brief & Resume
 - [One-Page Executive Resume & Systems Brief](https://clewlabs.org/resume.html): Complete one-page overview of background, systems built, speaking, and operating ethos.
@@ -20,7 +20,7 @@ Clew Labs is the independent civic technology and applied AI practice of La Shar
 - [Clew Directive](https://clewdirective.com): Stateless, privacy-first personalized learning path generator using verified free resources on AWS Bedrock & Amplify.
 - [Themis Lex](https://themislex.org): Role-based AI readiness guidance for judicial staff evaluating workflow sensitivity.
 - [Porch Light](https://github.com/earlgreyhot1701D/porch-light): Weekly plain-language synthesis of Ventura city agendas with receipts on every claim.
-- [Charitas Clew](https://charitas-clew.web.app): Mobile-first public rights engine deconstructing bureaucratic notices with Gemini Flash, backed by an honest post-sprint security audit.
+- [Charitas Clew](https://github.com/earlgreyhot1701D/charitas-clew): Mobile-first public rights engine deconstructing bureaucratic notices with Gemini Flash, backed by an honest post-sprint security audit. Retired; source remains public.
 
 ## Key Technical Writing & Field Notes
 - [Open AI Build Week: Foundation First, Software Second](https://dev.to/earlgreyhot1701d/open-ai-build-week-3fi8): Companion field note for Verity Lex on why foundation comes before software in government AI systems.
@@ -35,9 +35,10 @@ Clew Labs is the independent civic technology and applied AI practice of La Shar
 ## Verified Credentials & Recognitions
 - **National Conference**: Presenter at the National Association for Court Management (NACM 2026) on frontline court AI capacity ([Presentation Slides](https://docs.google.com/presentation/d/1leFoGAr5DqgRPHX4RibSG--09FMBSyhY/edit?usp=sharing)).
 - **Netlify Build Challenge**: Dual winner for Most Prolific (33 apps) and Most Consistent (26 build days) in Netlify Hot AR Summer (250+ projects).
-- **DEV Community**: Featured in Top 7 Posts of the Week ("must-reads") and 2× Community Favorite Gem Awards.
+- **DEV Community**: Featured three times in Top 7 Posts of the Week ("must-reads") and 2× Community Favorite Gem Awards.
+- **DoraHacks**: Winner, DoraHacks AWS Global Vibe Hackathon 2025 (Janus Clew).
 - **AI Vibe Coding Hackathon**: 4th place out of 250 builders (Top 1.6%).
-- **AWS**: AWS 10,000 AIdeas semifinalist & California Community Colleges AI Summer Camp selection.
+- **AWS**: AWS 10,000 AIdeas semifinalist & California Community Colleges AI Summer Camp selection. Future AWS Agent Engineer Nanodegree graduate (Udacity, 2026).
 - **Google / Community**: DEV Community WeCoded winner & Best Use of Google AI winner.
 
 ## Contact & Links
@@ -45,5 +46,6 @@ Clew Labs is the independent civic technology and applied AI practice of La Shar
 - GitHub: https://github.com/earlgreyhot1701D
 - DEV.to: https://dev.to/earlgreyhot1701d
 - LinkedIn: https://www.linkedin.com/in/la-shara-cordero-a0017a11/
-- Email: lasharac@gmail.com
+- X: https://x.com/clewlabs
+- Email: lsjcordero@gmail.com
 - Website: https://clewlabs.org/
