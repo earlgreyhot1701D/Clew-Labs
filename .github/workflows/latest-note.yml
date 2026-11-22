@@ -1,0 +1,56 @@
+name: Latest field note
+
+# Once a day, fill the third Writing card on clewlabs.org with the newest
+# dev.to post that isn't already pinned. Opens a pull request for review.
+# Never merges on its own. Never touches any other part of the site.
+
+on:
+  schedule:
+    - cron: "17 15 * * *" # daily, 7:17 am Pacific (15:17 UTC, standard time)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: latest-note
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      BRANCH: auto/latest-note
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Fill slot 3 from dev.to
+        run: node .github/scripts/update-latest-note.mjs
+
+      - name: Open or update the pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "Nothing changed. No pull request."
+            exit 0
+          fi
+          TITLE="Latest field note: $(git diff -U0 -- index.html | grep -m1 '^+ *<h3>' | sed -E 's/^\+ *<h3>(.*)<\/h3>/\1/')"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add index.html
+          git commit -m "$TITLE"
+          git push --force origin "$BRANCH"
+          if [ -z "$(gh pr list --head "$BRANCH" --state open --json number --jq '.[].number')" ]; then
+            gh pr create --base main --head "$BRANCH" --title "$TITLE" \
+              --body "Automated by the Latest field note workflow. Only the third Writing card in index.html changed. Review the card, then merge to publish."
+          else
+            echo "Updated the open pull request on $BRANCH."
+          fi
