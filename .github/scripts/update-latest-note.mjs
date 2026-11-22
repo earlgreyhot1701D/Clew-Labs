@@ -35,11 +35,30 @@ function noEmDash(text) {
 }
 
 // Trim a summary at a word boundary.
+// dev.to cuts descriptions off mid-thought and adds "...". When that happens,
+// keep only the complete sentences so the card never ends on a fragment.
 function summarize(text) {
-  const clean = noEmDash(String(text || "").replace(/\s+/g, " ")).trim();
-  if (clean.length <= MAX_SUMMARY) return clean;
-  const cut = clean.slice(0, MAX_SUMMARY);
-  return `${cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:.]$/, "")}…`;
+  let clean = noEmDash(String(text || "").replace(/\s+/g, " ")).trim();
+  const truncated = /(\.\.\.|…)$/.test(clean) || clean.length > MAX_SUMMARY;
+  if (truncated) {
+    const head = clean.replace(/(\.\.\.|…)$/, "").slice(0, MAX_SUMMARY);
+    const lastStop = Math.max(head.lastIndexOf(". "), head.lastIndexOf("! "), head.lastIndexOf("? "));
+    if (lastStop > 40) {
+      clean = head.slice(0, lastStop + 1);
+    } else {
+      clean = `${head.slice(0, head.lastIndexOf(" ")).replace(/[,;:.]$/, "")}…`;
+    }
+  }
+  return clean;
+}
+
+// Long titles make card 3 much taller than the pinned cards. Drop a trailing
+// parenthetical aside; the link still goes to the full post.
+function cardTitle(title) {
+  const t = noEmDash(title).trim();
+  if (t.length <= 70) return t;
+  const shorter = t.replace(/\s*\([^()]*\)\s*$/, "").trim();
+  return shorter.length >= 20 ? shorter : t;
 }
 
 function formatDate(iso) {
@@ -64,7 +83,7 @@ function buildCard(post) {
               <span class="micro">${esc(kicker)}</span>
               <span class="essay-badge">${esc(badge)}</span>
             </div>
-            <h3>${esc(noEmDash(post.title))}</h3>
+            <h3>${esc(cardTitle(post.title))}</h3>
           </div>
           <div class="feed-container">
             <div class="feed-bar">
