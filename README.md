@@ -71,7 +71,7 @@ A stateless, privacy-focused curriculum synthesizer providing personalized learn
 * **Stack:** AWS Amplify · Amazon Nova · AWS Lambda · S3 · TypeScript CDK · Next.js
 * **Source:** [`github.com/earlgreyhot1701D/Clew-Directive`](https://github.com/earlgreyhot1701D/Clew-Directive)
 * **Recognition:** AWS 10,000 AIdeas Semifinalist
-* **Companion Field Note:** [“AIdeas: Clew Directive — Free AI Learning Navigator”](https://builder.aws.com/content/39mEGMF2RFcE1Yt3xZ97TKFz4Xs/aideas-clew-directive-free-ai-learning-navigator-or-stop-following-the-hype-start-directing-the-search)
+* **Companion Field Note:** [“Clew Directive: Free AI Learning Navigator”](https://builder.aws.com/content/39mEGMF2RFcE1Yt3xZ97TKFz4Xs/aideas-clew-directive-free-ai-learning-navigator-or-stop-following-the-hype-start-directing-the-search)
 
 ### ⚖️ [Themis Lex](https://themislex.org) · *Role-Based Judicial AI Alignment*
 Role-based AI readiness self-check for California judicial staff. Evaluates specific court workflows against sensitivity guidelines to determine where AI can safely assist and where human authority must remain.
@@ -85,7 +85,7 @@ Role-based AI readiness self-check for California judicial staff. Evaluates spec
 
 - **National Association for Court Management (NACM 2026):** Workshop Presenter on frontline court AI capacity & systems readiness ([Presentation Slide Deck](https://docs.google.com/presentation/d/1leFoGAr5DqgRPHX4RibSG--09FMBSyhY/edit?usp=sharing)).
 - **Netlify Hot AR Summer:** **Dual Winner** for *Most Prolific* (33 deterministic single-file applications) and *Most Consistent* (26 build days) out of 250+ projects.
-- **DEV Community Editorial:** Featured in DEV’s **Top 7 Posts of the Week** + 2× Community Favorite Gem Awards ([Satisficing](https://dev.to/earlgreyhot1701d/my-agents-never-get-tired-i-do-on-satisficing-1mb) & [Block Zero](https://dev.to/earlgreyhot1701d/block-zero-oh-no-claude-kiro-and-i-over-engineered-the-throwaway-5d42)).
+- **DEV Community Editorial:** Featured four times in DEV’s **Top 7 Posts of the Week** + 5× Community Favorite Gem Awards ([Satisficing](https://dev.to/earlgreyhot1701d/my-agents-never-get-tired-i-do-on-satisficing-1mb) & [Block Zero](https://dev.to/earlgreyhot1701d/block-zero-oh-no-claude-kiro-and-i-over-engineered-the-throwaway-5d42)).
 - **AI Vibe Coding Hackathon:** **4th of 250 builders** (Top 1.6%).
 - **AWS 10,000 AIdeas:** Semifinalist selection & California Community Colleges AI Summer Camp.
 - **Commissioned Author:** Sponsored evaluation of AI Gateway RBAC and access control.
@@ -99,10 +99,10 @@ This repository hosts the public web home of Clew Labs:
 * **Pure Vanilla Architecture:** Single-file HTML5, CSS3 tokens, and lightweight vanilla JS. Zero runtime dependencies, no build steps, instant page load.
 * **Executive One-Sheet ([`resume.html`](https://clewlabs.org/resume.html)):** On-brand single-page executive brief with calibrated `@media print` rules for clean 1-page PDF export.
 * **AI & Search Discoverability:**
-  * [`llms.txt`](https://clewlabs.org/llms.txt) — Token-efficient context for frontier LLM answer engines (Perplexity, ChatGPT, Claude).
-  * [`robots.txt`](https://clewlabs.org/robots.txt) — Explicit policy welcoming AI research crawlers while disallowing scrapers.
-  * [`sitemap.xml`](https://clewlabs.org/sitemap.xml) — Validated search index.
-  * Schema.org JSON-LD — Semantic knowledge graph registering `Person`, `Organization`, and `SoftwareApplication` entities.
+  * [`llms.txt`](https://clewlabs.org/llms.txt): Token-efficient context for frontier LLM answer engines (Perplexity, ChatGPT, Claude).
+  * [`robots.txt`](https://clewlabs.org/robots.txt): Explicit policy welcoming AI research crawlers while disallowing scrapers.
+  * [`sitemap.xml`](https://clewlabs.org/sitemap.xml): Validated search index.
+  * Schema.org JSON-LD: Semantic knowledge graph registering `Person`, `Organization`, and `SoftwareApplication` entities.
 
 ### Running Locally
 
@@ -127,7 +127,7 @@ Open to public sector AI product roles, civic technology collaborations, respons
 * **LinkedIn:** [linkedin.com/in/la-shara-cordero](https://www.linkedin.com/in/la-shara-cordero-a0017a11/)
 * **DEV Community:** [dev.to/earlgreyhot1701d](https://dev.to/earlgreyhot1701d)
 * **GitHub:** [github.com/earlgreyhot1701D](https://github.com/earlgreyhot1701D)
-* **Direct Inquiries:** `lasharac@gmail.com`
+* **Direct Inquiries:** `lsjcordero@gmail.com`
 
 ---
 
