@@ -17,6 +17,7 @@ Clew Labs is the independent civic technology and applied AI practice of La Shar
 - [Verity Lex Methods](https://verity-lex.vercel.app/methods): Formal documentation on deterministic scoring registries versus model hallucinations.
 - [Agentis Lux](https://agentislux.io): A scanner and 50-site benchmark showing developers what retrieval agents experience when parsing websites.
 - [Heimdall](https://github.com/earlgreyhot1701D/heimdall): Reproducible least-privilege test harness of RBAC at an AI gateway (Bifrost), featuring falsification controls and append-only audit logs.
+- [Dead Keys](https://dead-keys.vercel.app): The 1980s typing games MasterType and Type Attack rebuilt as a keyboard trainer that drills the keys you miss. Built spec-first with Kiro.
 - [Clew Directive](https://clewdirective.com): Stateless, privacy-first personalized learning path generator using verified free resources on AWS Bedrock & Amplify.
 - [Themis Lex](https://themislex.org): Role-based AI readiness guidance for judicial staff evaluating workflow sensitivity.
 - [Porch Light](https://github.com/earlgreyhot1701D/porch-light): Weekly plain-language synthesis of Ventura city agendas with receipts on every claim.
